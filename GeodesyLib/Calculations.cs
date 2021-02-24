@@ -12,6 +12,13 @@ namespace GeodesyLib
         {
             
         }
+
+
+        public double CalculateBearing(Coordinate from, Coordinate to)
+        {
+            return 0;
+        }
+        
         
     }
 }
