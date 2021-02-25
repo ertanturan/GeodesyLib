@@ -30,8 +30,8 @@
       <option value="$PROJECT_DIR$/GeodesyLib/DataTypes/Coordinate.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Constants.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/UnitTest1.cs" />
-      <option value="$PROJECT_DIR$/GeodesyLib/Calculations.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib/Calculations.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1owcEgBBGOuALJEpyM4yrBwPJC8" />
@@ -58,7 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1614200983227</updated>
       <workItem from="1614200989935" duration="1325000" />
-      <workItem from="1614279651154" duration="4636000" />
+      <workItem from="1614279651154" duration="5379000" />
     </task>
     <servers />
   </component>
