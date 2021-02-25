@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeodesyLib", "GeodesyLib\GeodesyLib.csproj", "{8FF6F7DE-B200-49E4-AF77-E6B59E4A6BBB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeodesyLib_UnitTest", "GeodesyLib_UnitTest\GeodesyLib_UnitTest.csproj", "{A6320F1A-A254-49E4-805E-BA78830AFAA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{8FF6F7DE-B200-49E4-AF77-E6B59E4A6BBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FF6F7DE-B200-49E4-AF77-E6B59E4A6BBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FF6F7DE-B200-49E4-AF77-E6B59E4A6BBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6320F1A-A254-49E4-805E-BA78830AFAA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6320F1A-A254-49E4-805E-BA78830AFAA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6320F1A-A254-49E4-805E-BA78830AFAA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6320F1A-A254-49E4-805E-BA78830AFAA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
