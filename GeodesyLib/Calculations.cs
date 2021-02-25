@@ -31,6 +31,12 @@ namespace GeodesyLib
             return d;
         }
 
+        // This makes the simpler law of cosines a reasonable 1-line alternative to the haversine formula
+        // for many geodesy purposes (if not for astronomy). 
+        // The choice may be driven by programming language, processor, coding context, available trig
+        // functions (in different languages), etc – and, for very small distances an equirectangular approximation
+        // may be more suitable.
+
         public static double SphericalLawOfCosines(Coordinate from, Coordinate to)
         {
 
@@ -48,7 +54,8 @@ namespace GeodesyLib
             return 0;
         }
 
-
+        // This formula is for the initial bearing (sometimes referred to as forward azimuth) which if followed
+        // in a straight line along a great-circle arc will take you from the start point to the end point
         public static double CalculateInitialBearing(Coordinate from, Coordinate to)
         {
             double lat1 = Utility.ConvertToRadian(from.Lat);
