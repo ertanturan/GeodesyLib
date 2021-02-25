@@ -49,9 +49,26 @@ namespace GeodesyLib
         }
 
 
-        public static double CalculateBearing(Coordinate from, Coordinate to)
+        public static double CalculateInitialBearing(Coordinate from, Coordinate to)
         {
-            return 0;
+            double lat1 = Utility.ConvertToRadian(from.Lat);
+            double lat2 = Utility.ConvertToRadian(to.Lat);
+            
+            double lon1 = Utility.ConvertToRadian(from.Lon);
+            double lon2 = Utility.ConvertToRadian(to.Lon);
+
+            double lonDelta = lon2 - lon1;
+
+
+            double teta = Math.Atan2(Math.Sin(lonDelta) * Math.Cos(lat2),
+                Math.Cos(lat1) * Math.Sin(lat2) - Math.Sin(lat1) * Math.Cos(lat2) * Math.Cos(lonDelta)
+            );
+
+            double bearing = (teta * 180 / Constants.PI + 360) % 360;
+
+            return bearing;
+
+
         }
         
         

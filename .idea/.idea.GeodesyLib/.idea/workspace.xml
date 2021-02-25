@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e64d0abb-d638-48da-84bc-7243b52058ac" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/GeodesyLib.sln.DotSettings.user" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/GeodesyLib_UnitTest/GeodesyLib_UnitTest.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/workspace.xml" afterDir="false" />
@@ -12,6 +11,7 @@
       <change beforePath="$PROJECT_DIR$/GeodesyLib/Constants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/Constants.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeodesyLib/DataTypes/Coordinate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/DataTypes/Coordinate.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeodesyLib/Utility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/Utility.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +20,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -58,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1614200983227</updated>
       <workItem from="1614200989935" duration="1325000" />
-      <workItem from="1614279651154" duration="5379000" />
+      <workItem from="1614279651154" duration="9387000" />
     </task>
     <servers />
   </component>

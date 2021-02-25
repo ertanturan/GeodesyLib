@@ -31,12 +31,24 @@ namespace GeodesyLib_UnitTest
         [Test]
         public void SphericalLawOfCosines_WhenCalled_ReturnsTheExactResult()
         {
-            
+            //act
             double result = Calculations.HaversineDistance(_from, _to);
 
             //assert
 
             Assert.That(result, Is.EqualTo(404.27916398870167));
+            
+        }
+
+        [Test]
+        public void CalculateBearing_WhenCalled_ReturnsTheExactResult()
+        {
+            //act
+            double result = Calculations.CalculateInitialBearing(
+             _from,_to
+                );
+            //assert
+            Assert.That(result,Is.EqualTo(156.16658258152279));
             
         }
     }
