@@ -6,6 +6,12 @@
         public double Lon { get; private set; }
         public double Alt { get; private set; }
 
+        public Coordinate(double lat, double lon)
+        {
+            Lat = lat;
+            Lon = lon;
+        }
+
         public Coordinate(double lat, double lon, double alt)
         {
             Lat = lat;
