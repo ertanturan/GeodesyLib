@@ -77,6 +77,41 @@ namespace GeodesyLib
 
 
         }
+
+        public static Coordinate CalculateMidPoint(Coordinate from, Coordinate to)
+        {
+
+            double lat1 = Utility.ConvertToRadian(from.Lat);
+            double lat2 = Utility.ConvertToRadian(to.Lat);
+            
+            double lon1 = Utility.ConvertToRadian(from.Lon);
+            double lon2 = Utility.ConvertToRadian(to.Lon);
+            
+            double lonDelta = lon2 -lon1;
+
+            double bX = Math.Cos(lat2) * Math.Cos(lonDelta);
+            double bY = Math.Cos(lat2) * Math.Sin(lonDelta);
+
+            double cosBx = Math.Cos(lat1) + bX;
+            
+            double cosBxPow = Math.Pow(cosBx, 2);
+            double bY2 = Math.Pow(bY, 2);
+
+
+            double newLat = Math.Atan2(
+                Math.Sin(lat1) + Math.Sin(lat2), 
+                Math.Sqrt(cosBxPow+ bY2)
+            );
+                
+                
+
+            double newLon = lon1 + Math.Atan2(bY, Math.Cos(lat1) + bX);
+            newLon = (newLon + 540) % 360 - 180;
+            
+            return new Coordinate(
+                Utility.ConvertToDegree(newLat),
+                Utility.ConvertToDegree(newLon));
+        }
         
         
     }

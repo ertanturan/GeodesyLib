@@ -1,6 +1,7 @@
 using System;
 using GeodesyLib;
 using GeodesyLib.DataTypes;
+using Moq;
 using NUnit.Framework;
 
 namespace GeodesyLib_UnitTest
@@ -50,6 +51,22 @@ namespace GeodesyLib_UnitTest
             //assert
             Assert.That(result,Is.EqualTo(156.16658258152279));
             
+        }
+
+        [Test]
+        public void CalculateMidPoint_WhenCalled_ReturnsTheExactResult()
+        {
+            //act
+
+            Coordinate result = Calculations.CalculateMidPoint(_from, _to);
+
+            Coordinate expectedResult = new Coordinate( 50.53632687827433d,1.27461410068055d);
+            
+            //assert
+            
+            Assert.That(result.Lat,Is.EqualTo(expectedResult.Lat));
+            Assert.That(result.Lon,Is.EqualTo(expectedResult.Lon));
+
         }
         
         
