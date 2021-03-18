@@ -1,4 +1,6 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	
+	
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=96dc2c5d_002D2620_002D4b0b_002D9c34_002D669d52485b84/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="HaversineDistance_WhenCalled_ReturnsTheExactResult" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::A6320F1A-A254-49E4-805E-BA78830AFAA4::net5.0::GeodesyLib_UnitTest.CalculationTests&lt;/TestId&gt;&#xD;

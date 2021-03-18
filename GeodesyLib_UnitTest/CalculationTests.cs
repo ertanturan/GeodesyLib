@@ -38,7 +38,6 @@ namespace GeodesyLib_UnitTest
             //assert
 
             Assert.That(result, Is.EqualTo(404.27916398870167));
-            
         }
 
         [Test]
@@ -46,11 +45,10 @@ namespace GeodesyLib_UnitTest
         {
             //act
             double result = Calculations.CalculateInitialBearing(
-             _from,_to
-                );
+                _from, _to
+            );
             //assert
-            Assert.That(result,Is.EqualTo(156.16658258152279));
-            
+            Assert.That(result, Is.EqualTo(156.16658258152279));
         }
 
         [Test]
@@ -60,15 +58,56 @@ namespace GeodesyLib_UnitTest
 
             Coordinate result = Calculations.CalculateMidPoint(_from, _to);
 
-            Coordinate expectedResult = new Coordinate( 50.53632687827433d,1.27461410068055d);
+            Coordinate expectedResult = new Coordinate(50.53632687827433d, 1.27461410068055d);
+
+            //assert
+
+            Assert.That(result.Lat, Is.EqualTo(expectedResult.Lat));
+            Assert.That(result.Lon, Is.EqualTo(expectedResult.Lon));
+        }
+
+
+        [Test]
+        [TestCase(0, 52.205, 0.119)]
+        [TestCase(1, 48.857, 2.351)]
+        public void CalculateIntermediatePoint_WhenCalled_ReturnsExactResult(double fraction,
+            double expectedLat, double expectedLon)
+        {
+            
+            //act
+            double distance = Calculations.HaversineDistance(_from, _to);
+            
+            Coordinate result = Calculations.CalculateIntermediatePoint(_from, _to,
+                distance, fraction);
+
+
+            //assert
+            Assert.AreEqual(expectedLat, result.Lat, 0.0000001d);
+            Assert.AreEqual(expectedLon, result.Lon, 0.0000001d);
+            
+        }
+
+        [Test]
+        [TestCase(100,12,53.084266,0.4302)]
+        public void CalculateDestinationPoint_WhenCalled_ReturnsExactResult(double distance, 
+            double bearing,
+            double expectedLat, double expectedLon)
+        {
+            // //arrange
+            // double distance = 100;
+            // double bearing = 12;
+            
+            
+            //act
+
+            Coordinate result = Calculations.CalculateDestinationPoint(_from, distance, bearing);
             
             //assert
+            Assert.AreEqual(expectedLat,result.Lat,0.0001d);
+            Assert.AreEqual(expectedLon,result.Lon,0.0001d);
             
-            Assert.That(result.Lat,Is.EqualTo(expectedResult.Lat));
-            Assert.That(result.Lon,Is.EqualTo(expectedResult.Lon));
+            
 
         }
-        
-        
     }
 }
