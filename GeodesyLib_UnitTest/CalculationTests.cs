@@ -70,7 +70,6 @@ namespace GeodesyLib_UnitTest
         [Test]
         [TestCase(0, 52.205, 0.119)]
         [TestCase(1, 48.857, 2.351)]
-        [TestCase(0.000001, 48.857, 2.351)]
         public void CalculateIntermediatePoint_WhenCalled_ReturnsExactResult(double fraction,
             double expectedLat, double expectedLon)
         {
