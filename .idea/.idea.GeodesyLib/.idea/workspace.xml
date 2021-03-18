@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e64d0abb-d638-48da-84bc-7243b52058ac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeodesyLib.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeodesyLib/Calculations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/Calculations.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeodesyLib/Utility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/Utility.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,10 +29,10 @@
       <option value="$PROJECT_DIR$/GeodesyLib/Class1.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Geodesy.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/GeodesyLib.csproj" />
-      <option value="$PROJECT_DIR$/GeodesyLib/Utility.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/DataTypes/Coordinate.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Constants.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/UnitTest1.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib/Utility.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Calculations.cs" />
     </changedPaths>
@@ -44,11 +47,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
   </component>
+  <component name="RunManager" selected="96dc2c5d-2620-4b0b-9c34-669d52485b84" />
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -59,7 +65,7 @@
       <updated>1614200983227</updated>
       <workItem from="1614200989935" duration="1325000" />
       <workItem from="1614279651154" duration="10340000" />
-      <workItem from="1616087948594" duration="362000" />
+      <workItem from="1616087948594" duration="7276000" />
     </task>
     <servers />
   </component>
@@ -80,5 +86,63 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/GeodesyLib/Calculations.cs</url>
+          <line>151</line>
+          <properties documentPath="C:\Users\Ertan\Desktop\CSharp\GeodesyLib\GeodesyLib\Calculations.cs" initialLine="160" containingFunctionPresentation="method 'CalculateIntermediatePoint'">
+            <startOffsets>
+              <option value="6276" />
+            </startOffsets>
+            <endOffsets>
+              <option value="6277" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/GeodesyLib/Calculations.cs</url>
+          <line>130</line>
+          <properties documentPath="C:\Users\Ertan\Desktop\CSharp\GeodesyLib\GeodesyLib\Calculations.cs" initialLine="139" containingFunctionPresentation="method 'CalculateIntermediatePoint'">
+            <startOffsets>
+              <option value="5315" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5363" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/GeodesyLib/Calculations.cs</url>
+          <line>131</line>
+          <properties documentPath="C:\Users\Ertan\Desktop\CSharp\GeodesyLib\GeodesyLib\Calculations.cs" initialLine="140" containingFunctionPresentation="method 'CalculateIntermediatePoint'">
+            <startOffsets>
+              <option value="5376" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5422" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/GeodesyLib/Calculations.cs</url>
+          <line>129</line>
+          <properties documentPath="C:\Users\Ertan\Desktop\CSharp\GeodesyLib\GeodesyLib\Calculations.cs" initialLine="125" containingFunctionPresentation="method 'CalculateIntermediatePoint'">
+            <startOffsets>
+              <option value="5302" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5302" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

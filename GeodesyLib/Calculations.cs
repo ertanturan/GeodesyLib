@@ -37,8 +37,8 @@ namespace GeodesyLib
         /// functions (in different languages), etc – and, for very small distances an equirectangular approximation
         /// may be more suitable.
         /// </summary>
-        /// <param name="from">first coordinate, starting point of a destination </param>
-        /// <param name="to">second coordinate, end point of a destination</param>
+        /// <param name="from">starting coordinate, starting point of a destination </param>
+        /// <param name="to">final coordinate, end point of a destination</param>
         /// <returns></returns>
         public static double SphericalLawOfCosines(Coordinate from, Coordinate to)
         {
@@ -61,8 +61,8 @@ namespace GeodesyLib
         /// in a straight line along a great-circle arc will take you from the start point to the end point
         /// 
         /// </summary>
-        /// <param name="from">first coordinate, starting point of a destination </param>
-        /// <param name="to">second coordinate, end point of a destination</param>
+        /// <param name="from">starting coordinate, starting point of a destination </param>
+        /// <param name="to">final coordinate, end point of a destination</param>
         /// <returns></returns>
         public static double CalculateInitialBearing(Coordinate from, Coordinate to)
         {
@@ -118,10 +118,37 @@ namespace GeodesyLib
         }
 
         /// <summary>
-        /// An intermediate point at any fraction along the great circle path between two points 
+        /// An intermediate point at any fraction along the great circle path between two points
         /// </summary>
-        public static void CalculateMidPoint()
+        /// <param name="from">starting point </param>
+        /// <param name="to">final point</param>
+        /// <param name="distance">arc distance between starting and final points</param>
+        /// <param name="fraction">f=0 is the starting point , f=1 is the end point , 0.xxx is the between points</param>
+        /// <returns></returns>
+        public static Coordinate CalculateIntermediatePoint(Coordinate from, Coordinate to,
+            double distance, double fraction)
         {
+            double lat1 = Utility.ConvertToRadian(from.Lat);
+            double lat2 = Utility.ConvertToRadian(to.Lat);
+
+            double lon1 = Utility.ConvertToRadian(from.Lon);
+            double lon2 = Utility.ConvertToRadian(to.Lon);
+
+            double angularSin = Math.Sin(distance);
+
+            double a = Math.Sin((1 - fraction) * distance) / angularSin;
+            double b = Math.Sin(fraction * distance) / angularSin;
+
+            double x = a * Math.Cos(lat1) * Math.Cos(lon1) + b * Math.Cos(lat2) * Math.Cos(lon2);
+            double y = a * Math.Cos(lat1) * Math.Sin(lon1) + b * Math.Cos(lat2) * Math.Sin(lon2);
+            double z = a * Math.Sin(lat1) + b * Math.Sin(lat2);
+
+            double newLat = Math.Atan2(z, Math.Sqrt(Math.Pow(x, 2) + Math.Pow(y, 2)));
+            double newLon = Math.Atan2(y, x);
+
+            return new Coordinate(
+                Utility.ConvertToDegree(newLat),
+                Utility.ConvertToDegree(newLon));
         }
     }
 }

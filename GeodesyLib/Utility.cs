@@ -15,6 +15,11 @@
         {
             return radian * (180 / Constants.PI);
         }
+        
+        public static double Normalize(double value,double minNormalizationValue,double maxNormalizationValue)
+        {
+            return value / (maxNormalizationValue - minNormalizationValue);
+        }
     }
     
 }
