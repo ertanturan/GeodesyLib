@@ -150,5 +150,31 @@ namespace GeodesyLib
                 Utility.ConvertToDegree(newLat),
                 Utility.ConvertToDegree(newLon));
         }
+
+
+        public static Coordinate CalculateDestinationPoint(Coordinate from, double distance, double bearing)
+        {
+            double lat1 = Utility.ConvertToRadian(from.Lat);
+            double lon1 = Utility.ConvertToRadian(from.Lon);
+
+            double rBearing = Utility.ConvertToRadian(bearing);
+            
+            double distanceDividedByRadius = distance/Constants.RADIUS;
+            
+            double newLat = Math.Asin(Math.Sin(lat1) * Math.Cos(distanceDividedByRadius) +
+                                      Math.Cos(lat1) * Math.Sin(distanceDividedByRadius) * Math.Cos(rBearing)
+                                      );
+
+            double newLon = lon1 + Math.Atan2(
+                Math.Sin(rBearing) * Math.Sin(distanceDividedByRadius) * Math.Cos(lat1),
+                Math.Cos(distanceDividedByRadius) - Math.Sin(lat1) * Math.Sin(newLat)
+                );
+
+            double clampedLon = (newLon + 540) % 360 - 180;
+
+            return new Coordinate(
+                Utility.ConvertToDegree(newLat),
+                Utility.ConvertToDegree(clampedLon));
+        }
     }
 }

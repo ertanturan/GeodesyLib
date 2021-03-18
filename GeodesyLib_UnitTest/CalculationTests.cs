@@ -86,5 +86,28 @@ namespace GeodesyLib_UnitTest
             Assert.AreEqual(expectedLon, result.Lon, 0.0000001d);
             
         }
+
+        [Test]
+        [TestCase(100,12,53.084266,0.4302)]
+        public void CalculateDestinationPoint_WhenCalled_ReturnsExactResult(double distance, 
+            double bearing,
+            double expectedLat, double expectedLon)
+        {
+            // //arrange
+            // double distance = 100;
+            // double bearing = 12;
+            
+            
+            //act
+
+            Coordinate result = Calculations.CalculateDestinationPoint(_from, distance, bearing);
+            
+            //assert
+            Assert.AreEqual(expectedLat,result.Lat,0.0001d);
+            Assert.AreEqual(expectedLon,result.Lon,0.0001d);
+            
+            
+
+        }
     }
 }
