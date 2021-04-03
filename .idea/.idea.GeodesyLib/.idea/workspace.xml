@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e64d0abb-d638-48da-84bc-7243b52058ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/GeodesyLib/Exceptions/InfiniteIntersectionException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeodesyLib/Exceptions/IntersectionAmbiguousException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeodesyLib/RhumbCalculations.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeodesyLib_UnitTest/RhumbCalculationTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib/Calculations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/Calculations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib/Constants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/Utility/Constants.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib/DataTypes/Coordinate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/DataTypes/Coordinate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib/Utility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/Utility/Utility.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +38,11 @@
       <option value="$PROJECT_DIR$/GeodesyLib/Exceptions/InfiniteIntersectionException.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Exceptions/IntersectionAmbiguous.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Exceptions/IntersectionAmbiguousException.cs" />
-      <option value="$PROJECT_DIR$/GeodesyLib/Calculations.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib/Utility/Utility.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib/Calculations.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib/RhumbCalculations.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/RhumbCalculationTests.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1owcEgBBGOuALJEpyM4yrBwPJC8" />
@@ -75,7 +73,7 @@
       <workItem from="1614200989935" duration="1325000" />
       <workItem from="1614279651154" duration="10340000" />
       <workItem from="1616087948594" duration="9049000" />
-      <workItem from="1617487116405" duration="3672000" />
+      <workItem from="1617487116405" duration="5865000" />
     </task>
     <servers />
   </component>
@@ -96,24 +94,5 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/GeodesyLib/Calculations.cs</url>
-          <line>176</line>
-          <properties documentPath="C:\Users\Ertan\Desktop\CSharp\GeodesyLib\GeodesyLib\Calculations.cs" initialLine="165" containingFunctionPresentation="method 'DestinationPoint'">
-            <startOffsets>
-              <option value="7233" />
-            </startOffsets>
-            <endOffsets>
-              <option value="7240" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

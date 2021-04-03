@@ -31,6 +31,7 @@
             </e>
           </e>
         </e>
+        <e p="RhumbCalculations.cs" t="Include" />
         <e p="Utility" t="Include">
           <e p="Constants.cs" t="Include" />
           <e p="Utility.cs" t="Include" />
@@ -48,6 +49,7 @@
             </e>
           </e>
         </e>
+        <e p="RhumbCalculationTests.cs" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
     </e>
