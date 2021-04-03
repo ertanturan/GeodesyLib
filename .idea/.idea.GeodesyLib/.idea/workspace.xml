@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e64d0abb-d638-48da-84bc-7243b52058ac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/GeodesyLib/Exceptions/InfiniteIntersectionException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeodesyLib/Exceptions/IntersectionAmbiguousException.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeodesyLib/Calculations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/Calculations.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeodesyLib/Constants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/Utility/Constants.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeodesyLib/DataTypes/Coordinate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/DataTypes/Coordinate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeodesyLib/Utility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/Utility/Utility.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,15 +28,21 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3BB42FD3-8BD8-407B-9667-FBF8CE1367E9/30/Exception.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/GeodesyLib/Class1.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Geodesy.cs" />
-      <option value="$PROJECT_DIR$/GeodesyLib/GeodesyLib.csproj" />
-      <option value="$PROJECT_DIR$/GeodesyLib/DataTypes/Coordinate.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Constants.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/UnitTest1.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Utility.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib/DataTypes/Coordinate.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib/GeodesyLib.csproj" />
+      <option value="$PROJECT_DIR$/GeodesyLib/Exceptions/InfiniteIntersectionException.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib/Exceptions/IntersectionAmbiguous.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib/Exceptions/IntersectionAmbiguousException.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Calculations.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" />
     </changedPaths>
@@ -64,6 +75,7 @@
       <workItem from="1614200989935" duration="1325000" />
       <workItem from="1614279651154" duration="10340000" />
       <workItem from="1616087948594" duration="9049000" />
+      <workItem from="1617487116405" duration="3672000" />
     </task>
     <servers />
   </component>
@@ -90,13 +102,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/GeodesyLib/Calculations.cs</url>
-          <line>172</line>
+          <line>176</line>
           <properties documentPath="C:\Users\Ertan\Desktop\CSharp\GeodesyLib\GeodesyLib\Calculations.cs" initialLine="165" containingFunctionPresentation="method 'DestinationPoint'">
             <startOffsets>
-              <option value="7181" />
+              <option value="7233" />
             </startOffsets>
             <endOffsets>
-              <option value="7188" />
+              <option value="7240" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="31" />

@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Reflection.Metadata;
 using GeodesyLib.DataTypes;
+using GeodesyLib.Exceptions;
 
 namespace GeodesyLib
 {
@@ -50,7 +52,8 @@ namespace GeodesyLib
 
             double lonDelta = lon2 - lon1;
             double d = Math.Acos(
-                           Math.Sin(lat1) * Math.Sin(lat2) + Math.Cos(lat1) * Math.Cos(lat2) * Math.Acos(lonDelta)) *
+                           Math.Sin(lat1) * Math.Sin(lat2) + Math.Cos(lat1) * 
+                           Math.Cos(lat2) * Math.Acos(lonDelta)) *
                        Constants.RADIUS;
 
             return 0;
@@ -152,23 +155,24 @@ namespace GeodesyLib
         }
 
 
-        public static Coordinate CalculateDestinationPoint(Coordinate from, double distance, double bearing)
+        public static Coordinate CalculateDestinationPoint(Coordinate from, double distance
+            , double bearing)
         {
             double lat1 = Utility.ConvertToRadian(from.Lat);
             double lon1 = Utility.ConvertToRadian(from.Lon);
 
             double rBearing = Utility.ConvertToRadian(bearing);
-            
-            double distanceDividedByRadius = distance/Constants.RADIUS;
-            
+
+            double distanceDividedByRadius = distance / Constants.RADIUS;
+
             double newLat = Math.Asin(Math.Sin(lat1) * Math.Cos(distanceDividedByRadius) +
                                       Math.Cos(lat1) * Math.Sin(distanceDividedByRadius) * Math.Cos(rBearing)
-                                      );
+            );
 
             double newLon = lon1 + Math.Atan2(
                 Math.Sin(rBearing) * Math.Sin(distanceDividedByRadius) * Math.Cos(lat1),
                 Math.Cos(distanceDividedByRadius) - Math.Sin(lat1) * Math.Sin(newLat)
-                );
+            );
 
             double clampedLon = (newLon + 540) % 360 - 180;
 
@@ -176,5 +180,118 @@ namespace GeodesyLib
                 Utility.ConvertToDegree(newLat),
                 Utility.ConvertToDegree(clampedLon));
         }
+
+        // `INTERSECTION OF TWO PATHS` IS UNDER DEVELOPMENT...
+
+        // public static Coordinate IntersectionOfTwoPaths(Coordinate firstCoordinate,
+        //     double firstBearing,
+        //     Coordinate secondCoordinate,
+        //     double secondBearing)
+        // {
+        //     double lat1 = Utility.ConvertToRadian(firstCoordinate.Lat);
+        //     double lat2 = Utility.ConvertToRadian(secondCoordinate.Lat);
+        //
+        //     double lon1 = Utility.ConvertToRadian(firstCoordinate.Lon);
+        //     double lon2 = Utility.ConvertToRadian(secondCoordinate.Lon);
+        //
+        //
+        //     double lonDelta = lon1 - lon2;
+        //     double latDelta = lat1 - lat2;
+        //
+        //     double cross12, cross21;
+        //
+        //     double distance12 = 2 * Math.Asin(
+        //         Math.Sqrt(
+        //             Math.Pow(Math.Sin(latDelta / 2), 2) +
+        //             Math.Cos(lat1) * Math.Cos(lat2) *
+        //             Math.Pow(Math.Sin(lonDelta / 2), 2)
+        //         )
+        //     );
+        //
+        //
+        //     double twoPi = 2 * Constants.PI;
+        //     
+        //     if ((lon2 - lon1) < 0)
+        //     {
+        //         cross12 = Math.Acos(
+        //             (Math.Sin(lat2) - Math.Sin(lat1) * Math.Cos(distance12))
+        //             /
+        //             (Math.Sin(distance12) * Math.Cos(lat1))
+        //         );
+        //
+        //         cross21 = twoPi - Math.Acos(
+        //             (Math.Sin(lat1) - Math.Sin(lat2) * Math.Cos(distance12))
+        //             /
+        //             (Math.Sin(distance12) * Math.Cos(lat2))
+        //         );
+        //     }
+        //     else
+        //     {
+        //         cross12 = twoPi - Math.Acos(
+        //             (Math.Sin(lat2) - Math.Sin(lat1) * Math.Cos(distance12))
+        //             /
+        //             (Math.Sin(distance12) * Math.Cos(lat1))
+        //         );
+        //
+        //         cross21 = Math.Acos(
+        //             (Math.Sin(lat1) - Math.Sin(lat2) * Math.Cos(distance12))
+        //             /
+        //             (Math.Sin(distance12) * Math.Cos(lat2))
+        //         );
+        //     }
+        //
+        //     
+        //     var ang1 = ((firstBearing-cross12+Constants.PI) % twoPi)-Constants.PI;
+        //     var ang2 = ((cross21 - secondBearing + Constants.PI) % twoPi)-Constants.PI;
+        //
+        //
+        //     if (Math.Sin(ang1)==0 & Math.Sin(ang2)==0)
+        //     {
+        //         throw new InfiniteIntersectionException(
+        //             "There is an infinite amount of intersection with the given coordinates and bearings ..");
+        //         
+        //     }
+        //     else if (Math.Sin(ang1)*Math.Sin(ang2)<0)
+        //     {
+        //         throw new IntersectionAmbiguousException(
+        //             "Intersection is ambiguous. Therefore, can not calculate intersection coordinate");
+        //     }
+        //     else
+        //     {
+        //         ang1 = Math.Abs(ang1);
+        //         ang2 = Math.Abs(ang2);
+        //
+        //         double ang3 = Math.Acos(
+        //             (-Math.Cos(ang1) * Math.Cos(ang2)) + (Math.Sin(ang2) * Math.Cos(distance12))
+        //         );
+        //
+        //
+        //         double dst13 = Math.Atan2(
+        //             Math.Sin(distance12) * Math.Sin(ang1) * Math.Sin(ang2)
+        //             ,
+        //             Math.Cos(ang2) + Math.Cos(ang1) * Math.Cos(ang3)
+        //         );
+        //
+        //         double lat3 = Math.Asin(
+        //             Math.Sin(lat1)*Math.Cos(dst13)+Math.Cos(lat1)*Math.Sin(dst13)*Math.Cos(firstBearing));
+        //
+        //
+        //         double dLon = Math.Atan2(
+        //             Math.Sin(firstBearing) * Math.Sin(dst13) * Math.Cos(lat1)
+        //             ,
+        //             Math.Cos(dst13) - Math.Sin(lat1) * Math.Sin(lat3)
+        //         );
+        //
+        //
+        //         double lon3 = ((lon1 - dLon + Constants.PI) % twoPi) - Constants.PI;
+        //
+        //         return new Coordinate(lat3, lon3);
+        //
+        //     }
+        //     
+        // }
+        
+        
+        
     }
 }

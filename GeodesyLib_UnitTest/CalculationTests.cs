@@ -73,10 +73,9 @@ namespace GeodesyLib_UnitTest
         public void CalculateIntermediatePoint_WhenCalled_ReturnsExactResult(double fraction,
             double expectedLat, double expectedLon)
         {
-            
             //act
             double distance = Calculations.HaversineDistance(_from, _to);
-            
+
             Coordinate result = Calculations.CalculateIntermediatePoint(_from, _to,
                 distance, fraction);
 
@@ -84,30 +83,44 @@ namespace GeodesyLib_UnitTest
             //assert
             Assert.AreEqual(expectedLat, result.Lat, 0.0000001d);
             Assert.AreEqual(expectedLon, result.Lon, 0.0000001d);
-            
         }
 
         [Test]
-        [TestCase(100,12,53.084266,0.4302)]
-        public void CalculateDestinationPoint_WhenCalled_ReturnsExactResult(double distance, 
+        [TestCase(100, 12, 53.084266, 0.4302)]
+        public void CalculateDestinationPoint_WhenCalled_ReturnsExactResult(double distance,
             double bearing,
             double expectedLat, double expectedLon)
         {
-            // //arrange
-            // double distance = 100;
-            // double bearing = 12;
-            
-            
             //act
 
             Coordinate result = Calculations.CalculateDestinationPoint(_from, distance, bearing);
-            
-            //assert
-            Assert.AreEqual(expectedLat,result.Lat,0.0001d);
-            Assert.AreEqual(expectedLon,result.Lon,0.0001d);
-            
-            
 
+            //assert
+            Assert.AreEqual(expectedLat, result.Lat, 0.0001d);
+            Assert.AreEqual(expectedLon, result.Lon, 0.0001d);
         }
+
+        // `INTERSECTION OF TWO PATHS` IS UNDER DEVELOPMENT...
+        //
+        // [Test]
+        // public void IntersectionOfTwoPaths_WhenCalled_ReturnsExactResult()
+        // {
+        //     //arrange
+        //     double firstBearing = Utility.ConvertToRadian(108.55);
+        //     double secondBearing = Utility.ConvertToRadian(32.44);
+        //
+        //     //act
+        //
+        //
+        //     Coordinate result = Calculations.IntersectionOfTwoPaths(_from, firstBearing,
+        //         _to, secondBearing);
+        //
+        //     //assert
+        //
+        //
+        //     Assert.AreEqual(0,result.Lat,0.0001d);
+        //     Assert.AreEqual(0,result.Lon,0.0001d);
+        // }
+        
     }
 }
