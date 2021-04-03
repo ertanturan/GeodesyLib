@@ -12,11 +12,11 @@ namespace GeodesyLib
         // (ignoring any hills they fly over, of course!).
         public static double HaversineDistance(Coordinate from, Coordinate to)
         {
-            double lat1 = Utility.ConvertToRadian(to.Lat);
-            double lat2 = Utility.ConvertToRadian(from.Lat);
+            double lat1 = to.Lat.ConvertToRadian();
+            double lat2 = @from.Lat.ConvertToRadian();
 
-            double lon1 = Utility.ConvertToRadian(to.Lon);
-            double lon2 = Utility.ConvertToRadian(from.Lon);
+            double lon1 = to.Lon.ConvertToRadian();
+            double lon2 = @from.Lon.ConvertToRadian();
 
             double latDelta = lat2 - lat1;
             double lonDelta = lon2 - lon1;
@@ -44,11 +44,11 @@ namespace GeodesyLib
         /// <returns></returns>
         public static double SphericalLawOfCosines(Coordinate from, Coordinate to)
         {
-            double lat1 = Utility.ConvertToRadian(from.Lat);
-            double lat2 = Utility.ConvertToRadian(to.Lat);
+            double lat1 = @from.Lat.ConvertToRadian();
+            double lat2 = to.Lat.ConvertToRadian();
 
-            double lon1 = Utility.ConvertToRadian(from.Lon);
-            double lon2 = Utility.ConvertToRadian(to.Lon);
+            double lon1 = @from.Lon.ConvertToRadian();
+            double lon2 = to.Lon.ConvertToRadian();
 
             double lonDelta = lon2 - lon1;
             double d = Math.Acos(
@@ -69,11 +69,11 @@ namespace GeodesyLib
         /// <returns></returns>
         public static double CalculateInitialBearing(Coordinate from, Coordinate to)
         {
-            double lat1 = Utility.ConvertToRadian(from.Lat);
-            double lat2 = Utility.ConvertToRadian(to.Lat);
+            double lat1 = @from.Lat.ConvertToRadian();
+            double lat2 = to.Lat.ConvertToRadian();
 
-            double lon1 = Utility.ConvertToRadian(from.Lon);
-            double lon2 = Utility.ConvertToRadian(to.Lon);
+            double lon1 = @from.Lon.ConvertToRadian();
+            double lon2 = to.Lon.ConvertToRadian();
 
             double lonDelta = lon2 - lon1;
 
@@ -89,11 +89,11 @@ namespace GeodesyLib
 
         public static Coordinate CalculateMidPoint(Coordinate from, Coordinate to)
         {
-            double lat1 = Utility.ConvertToRadian(from.Lat);
-            double lat2 = Utility.ConvertToRadian(to.Lat);
+            double lat1 = @from.Lat.ConvertToRadian();
+            double lat2 = to.Lat.ConvertToRadian();
 
-            double lon1 = Utility.ConvertToRadian(from.Lon);
-            double lon2 = Utility.ConvertToRadian(to.Lon);
+            double lon1 = @from.Lon.ConvertToRadian();
+            double lon2 = to.Lon.ConvertToRadian();
 
             double lonDelta = lon2 - lon1;
 
@@ -116,8 +116,8 @@ namespace GeodesyLib
             newLon = (newLon + 540) % 360 - 180;
 
             return new Coordinate(
-                Utility.ConvertToDegree(newLat),
-                Utility.ConvertToDegree(newLon));
+                newLat.ConvertToDegree(),
+                newLon.ConvertToDegree());
         }
 
         /// <summary>
@@ -131,11 +131,11 @@ namespace GeodesyLib
         public static Coordinate CalculateIntermediatePoint(Coordinate from, Coordinate to,
             double distance, double fraction)
         {
-            double lat1 = Utility.ConvertToRadian(from.Lat);
-            double lat2 = Utility.ConvertToRadian(to.Lat);
+            double lat1 = @from.Lat.ConvertToRadian();
+            double lat2 = to.Lat.ConvertToRadian();
 
-            double lon1 = Utility.ConvertToRadian(from.Lon);
-            double lon2 = Utility.ConvertToRadian(to.Lon);
+            double lon1 = @from.Lon.ConvertToRadian();
+            double lon2 = to.Lon.ConvertToRadian();
 
             double angularSin = Math.Sin(distance);
 
@@ -150,18 +150,18 @@ namespace GeodesyLib
             double newLon = Math.Atan2(y, x);
 
             return new Coordinate(
-                Utility.ConvertToDegree(newLat),
-                Utility.ConvertToDegree(newLon));
+                newLat.ConvertToDegree(),
+                newLon.ConvertToDegree());
         }
 
 
         public static Coordinate CalculateDestinationPoint(Coordinate from, double distance
             , double bearing)
         {
-            double lat1 = Utility.ConvertToRadian(from.Lat);
-            double lon1 = Utility.ConvertToRadian(from.Lon);
+            double lat1 = from.Lat.ConvertToRadian();
+            double lon1 = from.Lon.ConvertToRadian();
 
-            double rBearing = Utility.ConvertToRadian(bearing);
+            double rBearing = bearing.ConvertToRadian();
 
             double distanceDividedByRadius = distance / Constants.RADIUS;
 
@@ -177,8 +177,8 @@ namespace GeodesyLib
             double clampedLon = (newLon + 540) % 360 - 180;
 
             return new Coordinate(
-                Utility.ConvertToDegree(newLat),
-                Utility.ConvertToDegree(clampedLon));
+                newLat.ConvertToDegree(),
+                clampedLon.ConvertToDegree());
         }
 
         // `INTERSECTION OF TWO PATHS` IS UNDER DEVELOPMENT...
@@ -292,6 +292,7 @@ namespace GeodesyLib
         // }
         
         
+        // public double CalculateCrossTrackDistance()
         
     }
 }
