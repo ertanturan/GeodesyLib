@@ -22,7 +22,7 @@ namespace GeodesyLib_UnitTest
         public void HaversineDistance_WhenCalled_ReturnsTheExactResult()
         {
             //act
-            double result = Calculations.HaversineDistance(_from, _to);
+            double result = _from.HaversineDistance(_to);
 
             //assert
 
@@ -33,7 +33,7 @@ namespace GeodesyLib_UnitTest
         public void SphericalLawOfCosines_WhenCalled_ReturnsTheExactResult()
         {
             //act
-            double result = Calculations.HaversineDistance(_from, _to);
+            double result = _from.HaversineDistance(_to);
 
             //assert
 
@@ -44,8 +44,7 @@ namespace GeodesyLib_UnitTest
         public void CalculateBearing_WhenCalled_ReturnsTheExactResult()
         {
             //act
-            double result = Calculations.CalculateInitialBearing(
-                _from, _to
+            double result = _from.CalculateInitialBearing(_to
             );
             //assert
             Assert.That(result, Is.EqualTo(156.16658258152279));
@@ -56,7 +55,7 @@ namespace GeodesyLib_UnitTest
         {
             //act
 
-            Coordinate result = Calculations.CalculateMidPoint(_from, _to);
+            Coordinate result = _from.CalculateMidPoint(_to);
 
             Coordinate expectedResult = new Coordinate(50.53632687827433d, 1.27461410068055d);
 
@@ -74,9 +73,9 @@ namespace GeodesyLib_UnitTest
             double expectedLat, double expectedLon)
         {
             //act
-            double distance = Calculations.HaversineDistance(_from, _to);
+            double distance = _from.HaversineDistance(_to);
 
-            Coordinate result = Calculations.CalculateIntermediatePoint(_from, _to,
+            Coordinate result = _from.CalculateIntermediatePoint(_to,
                 distance, fraction);
 
 
@@ -93,7 +92,7 @@ namespace GeodesyLib_UnitTest
         {
             //act
 
-            Coordinate result = Calculations.CalculateDestinationPoint(_from, distance, bearing);
+            Coordinate result = _from.CalculateDestinationPoint(distance, bearing);
 
             //assert
             Assert.AreEqual(expectedLat, result.Lat, 0.0001d);

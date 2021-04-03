@@ -21,7 +21,7 @@ namespace GeodesyLib_UnitTest
         {
             //act
 
-            double result = _from.RhumbDistance(_to);
+            double result = _from.CalculateRhumbDistance(_to);
             
             Assert.AreEqual(404.29,result,0.01);
             

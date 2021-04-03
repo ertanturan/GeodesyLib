@@ -5,7 +5,7 @@ namespace GeodesyLib
 {
     public static class RhumbCalculations
     {
-        public static double RhumbDistance(this Coordinate from, Coordinate to)
+        public static double CalculateRhumbDistance(this Coordinate from, Coordinate to)
         {
             
             double lat1 = from.Lat.ConvertToRadian();

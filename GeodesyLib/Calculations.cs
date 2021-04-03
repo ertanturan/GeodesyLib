@@ -10,7 +10,7 @@ namespace GeodesyLib
         // This uses the ‘haversine’ formula to calculate the great-circle distance between two points – that is,
         // the shortest distance over the earth’s surface – giving an ‘as-the-crow-flies’ distance between the points
         // (ignoring any hills they fly over, of course!).
-        public static double HaversineDistance(Coordinate from, Coordinate to)
+        public static double HaversineDistance(this Coordinate from, Coordinate to)
         {
             double lat1 = to.Lat.ConvertToRadian();
             double lat2 = @from.Lat.ConvertToRadian();
@@ -42,7 +42,7 @@ namespace GeodesyLib
         /// <param name="from">starting coordinate, starting point of a destination </param>
         /// <param name="to">final coordinate, end point of a destination</param>
         /// <returns></returns>
-        public static double SphericalLawOfCosines(Coordinate from, Coordinate to)
+        public static double SphericalLawOfCosines(this Coordinate from, Coordinate to)
         {
             double lat1 = @from.Lat.ConvertToRadian();
             double lat2 = to.Lat.ConvertToRadian();
@@ -67,7 +67,7 @@ namespace GeodesyLib
         /// <param name="from">starting coordinate, starting point of a destination </param>
         /// <param name="to">final coordinate, end point of a destination</param>
         /// <returns></returns>
-        public static double CalculateInitialBearing(Coordinate from, Coordinate to)
+        public static double CalculateInitialBearing(this Coordinate from, Coordinate to)
         {
             double lat1 = @from.Lat.ConvertToRadian();
             double lat2 = to.Lat.ConvertToRadian();
@@ -87,7 +87,7 @@ namespace GeodesyLib
             return bearing;
         }
 
-        public static Coordinate CalculateMidPoint(Coordinate from, Coordinate to)
+        public static Coordinate CalculateMidPoint(this Coordinate from, Coordinate to)
         {
             double lat1 = @from.Lat.ConvertToRadian();
             double lat2 = to.Lat.ConvertToRadian();
@@ -128,7 +128,7 @@ namespace GeodesyLib
         /// <param name="distance">arc distance between starting and final points</param>
         /// <param name="fraction">f=0 is the starting point , f=1 is the end point , 0.xxx is the between points</param>
         /// <returns></returns>
-        public static Coordinate CalculateIntermediatePoint(Coordinate from, Coordinate to,
+        public static Coordinate CalculateIntermediatePoint(this Coordinate from, Coordinate to,
             double distance, double fraction)
         {
             double lat1 = @from.Lat.ConvertToRadian();
@@ -155,7 +155,7 @@ namespace GeodesyLib
         }
 
 
-        public static Coordinate CalculateDestinationPoint(Coordinate from, double distance
+        public static Coordinate CalculateDestinationPoint(this Coordinate from, double distance
             , double bearing)
         {
             double lat1 = from.Lat.ConvertToRadian();
