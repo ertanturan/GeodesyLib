@@ -30,14 +30,14 @@ namespace GeodesyLib_UnitTest
         }
 
         [Test]
-        public void SphericalLawOfCosines_WhenCalled_ReturnsTheExactResult()
+        public void CalculateSphericalLawOfCosines_WhenCalled_ReturnsTheExactResult()
         {
             //act
-            double result = _from.HaversineDistance(_to);
+            double result = _from.CalculateSphericalLawOfCosines(_to);
 
             //assert
 
-            Assert.That(result, Is.EqualTo(404.27916398870167));
+            Assert.AreEqual(404.27916398870167,result,0.00000000001d);
         }
 
         [Test]

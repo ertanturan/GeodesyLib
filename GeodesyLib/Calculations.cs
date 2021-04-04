@@ -42,21 +42,23 @@ namespace GeodesyLib
         /// <param name="from">starting coordinate, starting point of a destination </param>
         /// <param name="to">final coordinate, end point of a destination</param>
         /// <returns></returns>
-        public static double SphericalLawOfCosines(this Coordinate from, Coordinate to)
+        public static double CalculateSphericalLawOfCosines(this Coordinate from, Coordinate to)
         {
-            double lat1 = @from.Lat.ConvertToRadian();
+            double lat1 = from.Lat.ConvertToRadian();
             double lat2 = to.Lat.ConvertToRadian();
 
-            double lon1 = @from.Lon.ConvertToRadian();
+            double lon1 = from.Lon.ConvertToRadian();
             double lon2 = to.Lon.ConvertToRadian();
 
             double lonDelta = lon2 - lon1;
+            
             double d = Math.Acos(
-                           Math.Sin(lat1) * Math.Sin(lat2) + Math.Cos(lat1) * 
-                           Math.Cos(lat2) * Math.Acos(lonDelta)) *
+                           Math.Sin(lat1) * Math.Sin(lat2) +
+                           Math.Cos(lat1) * 
+                           Math.Cos(lat2) * Math.Cos(lonDelta)) *
                        Constants.RADIUS;
 
-            return 0;
+            return d;
         }
 
         /// <summary>
