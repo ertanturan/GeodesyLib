@@ -13,10 +13,10 @@ namespace GeodesyLib
         public static double HaversineDistance(this Coordinate from, Coordinate to)
         {
             double lat1 = to.Lat.ConvertToRadian();
-            double lat2 = @from.Lat.ConvertToRadian();
+            double lat2 = from.Lat.ConvertToRadian();
 
             double lon1 = to.Lon.ConvertToRadian();
-            double lon2 = @from.Lon.ConvertToRadian();
+            double lon2 = from.Lon.ConvertToRadian();
 
             double latDelta = lat2 - lat1;
             double lonDelta = lon2 - lon1;
@@ -71,10 +71,10 @@ namespace GeodesyLib
         /// <returns></returns>
         public static double CalculateInitialBearing(this Coordinate from, Coordinate to)
         {
-            double lat1 = @from.Lat.ConvertToRadian();
+            double lat1 = from.Lat.ConvertToRadian();
             double lat2 = to.Lat.ConvertToRadian();
 
-            double lon1 = @from.Lon.ConvertToRadian();
+            double lon1 = from.Lon.ConvertToRadian();
             double lon2 = to.Lon.ConvertToRadian();
 
             double lonDelta = lon2 - lon1;
@@ -91,10 +91,10 @@ namespace GeodesyLib
 
         public static Coordinate CalculateMidPoint(this Coordinate from, Coordinate to)
         {
-            double lat1 = @from.Lat.ConvertToRadian();
+            double lat1 = from.Lat.ConvertToRadian();
             double lat2 = to.Lat.ConvertToRadian();
 
-            double lon1 = @from.Lon.ConvertToRadian();
+            double lon1 = from.Lon.ConvertToRadian();
             double lon2 = to.Lon.ConvertToRadian();
 
             double lonDelta = lon2 - lon1;
@@ -133,10 +133,10 @@ namespace GeodesyLib
         public static Coordinate CalculateIntermediatePoint(this Coordinate from, Coordinate to,
             double distance, double fraction)
         {
-            double lat1 = @from.Lat.ConvertToRadian();
+            double lat1 = from.Lat.ConvertToRadian();
             double lat2 = to.Lat.ConvertToRadian();
 
-            double lon1 = @from.Lon.ConvertToRadian();
+            double lon1 = from.Lon.ConvertToRadian();
             double lon2 = to.Lon.ConvertToRadian();
 
             double angularSin = Math.Sin(distance);

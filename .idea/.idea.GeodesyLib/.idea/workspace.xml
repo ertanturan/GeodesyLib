@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e64d0abb-d638-48da-84bc-7243b52058ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeodesyLib/Calculations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/Calculations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib/Utility/Utility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/Utility/Utility.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeodesyLib/RhumbCalculations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/RhumbCalculations.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeodesyLib_UnitTest/RhumbCalculationTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib_UnitTest/RhumbCalculationTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,11 +38,11 @@
       <option value="$PROJECT_DIR$/GeodesyLib/Exceptions/InfiniteIntersectionException.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Exceptions/IntersectionAmbiguous.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Exceptions/IntersectionAmbiguousException.cs" />
-      <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/RhumbCalculationTests.cs" />
-      <option value="$PROJECT_DIR$/GeodesyLib/RhumbCalculations.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Utility/Utility.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Calculations.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib/RhumbCalculations.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/RhumbCalculationTests.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1owcEgBBGOuALJEpyM4yrBwPJC8" />
@@ -74,7 +73,9 @@
       <workItem from="1614200989935" duration="1325000" />
       <workItem from="1614279651154" duration="10340000" />
       <workItem from="1616087948594" duration="9049000" />
-      <workItem from="1617487116405" duration="6664000" />
+      <workItem from="1617487116405" duration="7076000" />
+      <workItem from="1617536877524" duration="599000" />
+      <workItem from="1617548062041" duration="1741000" />
     </task>
     <servers />
   </component>
