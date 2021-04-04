@@ -2,9 +2,8 @@
 {
     public class Coordinate
     {
-        public double Lat { get; private set; }
-        public double Lon { get; private set; }
-        public double Alt { get; private set; }
+        public double Lat { get; }
+        public double Lon { get; }
 
         public Coordinate(double lat, double lon)
         {
@@ -12,12 +11,6 @@
             Lon = lon;
         }
 
-        public Coordinate(double lat, double lon, double alt)
-        {
-            Lat = lat;
-            Lon = lon;
-            Alt = alt;
-        }
         
     }
 }

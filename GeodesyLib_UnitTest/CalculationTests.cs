@@ -22,7 +22,7 @@ namespace GeodesyLib_UnitTest
         public void HaversineDistance_WhenCalled_ReturnsTheExactResult()
         {
             //act
-            double result = Calculations.HaversineDistance(_from, _to);
+            double result = _from.HaversineDistance(_to);
 
             //assert
 
@@ -30,22 +30,21 @@ namespace GeodesyLib_UnitTest
         }
 
         [Test]
-        public void SphericalLawOfCosines_WhenCalled_ReturnsTheExactResult()
+        public void CalculateSphericalLawOfCosines_WhenCalled_ReturnsTheExactResult()
         {
             //act
-            double result = Calculations.HaversineDistance(_from, _to);
+            double result = _from.CalculateSphericalLawOfCosines(_to);
 
             //assert
 
-            Assert.That(result, Is.EqualTo(404.27916398870167));
+            Assert.AreEqual(404.27916398870167,result,0.00000000001d);
         }
 
         [Test]
         public void CalculateBearing_WhenCalled_ReturnsTheExactResult()
         {
             //act
-            double result = Calculations.CalculateInitialBearing(
-                _from, _to
+            double result = _from.CalculateInitialBearing(_to
             );
             //assert
             Assert.That(result, Is.EqualTo(156.16658258152279));
@@ -56,7 +55,7 @@ namespace GeodesyLib_UnitTest
         {
             //act
 
-            Coordinate result = Calculations.CalculateMidPoint(_from, _to);
+            Coordinate result = _from.CalculateMidPoint(_to);
 
             Coordinate expectedResult = new Coordinate(50.53632687827433d, 1.27461410068055d);
 
@@ -73,41 +72,54 @@ namespace GeodesyLib_UnitTest
         public void CalculateIntermediatePoint_WhenCalled_ReturnsExactResult(double fraction,
             double expectedLat, double expectedLon)
         {
-            
             //act
-            double distance = Calculations.HaversineDistance(_from, _to);
-            
-            Coordinate result = Calculations.CalculateIntermediatePoint(_from, _to,
+            double distance = _from.HaversineDistance(_to);
+
+            Coordinate result = _from.CalculateIntermediatePoint(_to,
                 distance, fraction);
 
 
             //assert
             Assert.AreEqual(expectedLat, result.Lat, 0.0000001d);
             Assert.AreEqual(expectedLon, result.Lon, 0.0000001d);
-            
         }
 
         [Test]
-        [TestCase(100,12,53.084266,0.4302)]
-        public void CalculateDestinationPoint_WhenCalled_ReturnsExactResult(double distance, 
+        [TestCase(100, 12, 53.084266, 0.4302)]
+        public void CalculateDestinationPoint_WhenCalled_ReturnsExactResult(double distance,
             double bearing,
             double expectedLat, double expectedLon)
         {
-            // //arrange
-            // double distance = 100;
-            // double bearing = 12;
-            
-            
             //act
 
-            Coordinate result = Calculations.CalculateDestinationPoint(_from, distance, bearing);
-            
-            //assert
-            Assert.AreEqual(expectedLat,result.Lat,0.0001d);
-            Assert.AreEqual(expectedLon,result.Lon,0.0001d);
-            
-            
+            Coordinate result = _from.CalculateDestinationPoint(distance, bearing);
 
+            //assert
+            Assert.AreEqual(expectedLat, result.Lat, 0.0001d);
+            Assert.AreEqual(expectedLon, result.Lon, 0.0001d);
         }
+
+        // `INTERSECTION OF TWO PATHS` IS UNDER DEVELOPMENT...
+        //
+        // [Test]
+        // public void IntersectionOfTwoPaths_WhenCalled_ReturnsExactResult()
+        // {
+        //     //arrange
+        //     double firstBearing = Utility.ConvertToRadian(108.55);
+        //     double secondBearing = Utility.ConvertToRadian(32.44);
+        //
+        //     //act
+        //
+        //
+        //     Coordinate result = Calculations.IntersectionOfTwoPaths(_from, firstBearing,
+        //         _to, secondBearing);
+        //
+        //     //assert
+        //
+        //
+        //     Assert.AreEqual(0,result.Lat,0.0001d);
+        //     Assert.AreEqual(0,result.Lon,0.0001d);
+        // }
+        
     }
 }
