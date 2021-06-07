@@ -1,3 +1,4 @@
+
 using System;
 using GeodesyLib;
 using GeodesyLib.DataTypes;
@@ -37,7 +38,7 @@ namespace GeodesyLib_UnitTest
 
             //assert
 
-            Assert.AreEqual(404.27916398870167,result,0.00000000001d);
+            Assert.AreEqual(404.27916398870167, result, 0.00000000001d);
         }
 
         [Test]
@@ -65,23 +66,25 @@ namespace GeodesyLib_UnitTest
             Assert.That(result.Lon, Is.EqualTo(expectedResult.Lon));
         }
 
+        
 
         [Test]
         [TestCase(0, 52.205, 0.119)]
         [TestCase(1, 48.857, 2.351)]
+        [TestCase(0.5, 50.5363, 1.2746)]
         public void CalculateIntermediatePoint_WhenCalled_ReturnsExactResult(double fraction,
             double expectedLat, double expectedLon)
         {
             //act
             double distance = _from.HaversineDistance(_to);
 
-            Coordinate result = _from.CalculateIntermediatePoint(_to,
+            Coordinate result = _from.CalculateIntermediatePointByFraction(_to,
                 distance, fraction);
 
 
             //assert
-            Assert.AreEqual(expectedLat, result.Lat, 0.0000001d);
-            Assert.AreEqual(expectedLon, result.Lon, 0.0000001d);
+            Assert.AreEqual(expectedLat, result.Lat, 0.0001d);
+            Assert.AreEqual(expectedLon, result.Lon, 0.0001d);
         }
 
         [Test]
@@ -99,27 +102,6 @@ namespace GeodesyLib_UnitTest
             Assert.AreEqual(expectedLon, result.Lon, 0.0001d);
         }
 
-        // `INTERSECTION OF TWO PATHS` IS UNDER DEVELOPMENT...
-        //
-        // [Test]
-        // public void IntersectionOfTwoPaths_WhenCalled_ReturnsExactResult()
-        // {
-        //     //arrange
-        //     double firstBearing = Utility.ConvertToRadian(108.55);
-        //     double secondBearing = Utility.ConvertToRadian(32.44);
-        //
-        //     //act
-        //
-        //
-        //     Coordinate result = Calculations.IntersectionOfTwoPaths(_from, firstBearing,
-        //         _to, secondBearing);
-        //
-        //     //assert
-        //
-        //
-        //     Assert.AreEqual(0,result.Lat,0.0001d);
-        //     Assert.AreEqual(0,result.Lon,0.0001d);
-        // }
         
     }
 }

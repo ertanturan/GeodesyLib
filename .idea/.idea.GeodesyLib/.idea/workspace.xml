@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e64d0abb-d638-48da-84bc-7243b52058ac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/GeodesyLib/Attributes/OnlyBetweenZeroAndOne.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeodesyLib/Calculations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/Calculations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib/RhumbCalculations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/RhumbCalculations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib_UnitTest/RhumbCalculationTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib_UnitTest/RhumbCalculationTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +25,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3BB42FD3-8BD8-407B-9667-FBF8CE1367E9/d9/90877a3c/NotNullAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3BB42FD3-8BD8-407B-9667-FBF8CE1367E9/30/Exception.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -39,10 +41,11 @@
       <option value="$PROJECT_DIR$/GeodesyLib/Exceptions/IntersectionAmbiguous.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Exceptions/IntersectionAmbiguousException.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Utility/Utility.cs" />
-      <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" />
-      <option value="$PROJECT_DIR$/GeodesyLib/Calculations.cs" />
-      <option value="$PROJECT_DIR$/GeodesyLib/RhumbCalculations.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/RhumbCalculationTests.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib/RhumbCalculations.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib/Attributes/OnlyBetweenZeroAndOne.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib/Calculations.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1owcEgBBGOuALJEpyM4yrBwPJC8" />
@@ -75,7 +78,10 @@
       <workItem from="1616087948594" duration="9049000" />
       <workItem from="1617487116405" duration="7076000" />
       <workItem from="1617536877524" duration="599000" />
-      <workItem from="1617548062041" duration="1741000" />
+      <workItem from="1617548062041" duration="2045000" />
+      <workItem from="1618899136367" duration="1459000" />
+      <workItem from="1620928230981" duration="608000" />
+      <workItem from="1623091173037" duration="3685000" />
     </task>
     <servers />
   </component>
@@ -129,5 +135,24 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs</url>
+          <line>76</line>
+          <properties documentPath="C:\Users\Ertan\Desktop\CSharp\GeodesyLib\GeodesyLib_UnitTest\CalculationTests.cs" initialLine="76" containingFunctionPresentation="method 'CalculateIntermediatePoint_WhenCalled_ReturnsExactResult'">
+            <startOffsets>
+              <option value="2033" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2080" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

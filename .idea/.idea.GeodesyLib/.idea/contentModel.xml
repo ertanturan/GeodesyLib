@@ -14,6 +14,9 @@
     <e p="C:\Users\Ertan\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_GeodesyLib.-1853913732.00" t="ExcludeRecursive" />
     <e p="C:\Users\Ertan\Desktop\CSharp\GeodesyLib" t="IncludeFlat">
       <e p="GeodesyLib" t="IncludeRecursive">
+        <e p="Attributes" t="Include">
+          <e p="OnlyBetweenZeroAndOne.cs" t="Include" />
+        </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="Calculations.cs" t="Include" />
         <e p="DataTypes" t="Include">
@@ -25,7 +28,7 @@
         </e>
         <e p="GeodesyLib.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="net5.0" t="Include">
               <e p="GeodesyLib.AssemblyInfo.cs" t="Include" />
             </e>
@@ -43,7 +46,7 @@
         <e p="CalculationTests.cs" t="Include" />
         <e p="GeodesyLib_UnitTest.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="net5.0" t="Include">
               <e p="GeodesyLib_UnitTest.AssemblyInfo.cs" t="Include" />
             </e>
