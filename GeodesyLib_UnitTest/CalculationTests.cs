@@ -79,7 +79,7 @@ namespace GeodesyLib_UnitTest
             double distance = _from.HaversineDistance(_to);
 
             Coordinate result = _from.CalculateIntermediatePointByFraction(_to,
-                distance, fraction);
+                 fraction);
 
 
             //assert
@@ -102,6 +102,18 @@ namespace GeodesyLib_UnitTest
             Assert.AreEqual(expectedLon, result.Lon, 0.0001d);
         }
 
+
+        [Test]
+        public void GetNAmountOfCoordinatesBetween_WhenCalled_ReturnsExactResult()
+        {
+            //act
+
+            Coordinate[] result = _from.Get_N_AmountOfCoordinatesBetween(_to,50);
+
+         
+            
+            Assert.That(result.Length,Is.EqualTo(50));
+        }
         
     }
 }

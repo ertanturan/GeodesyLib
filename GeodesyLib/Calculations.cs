@@ -138,19 +138,20 @@ namespace GeodesyLib
         /// 0.xxx is the between points</param>
         /// <returns></returns>
         public static Coordinate CalculateIntermediatePointByFraction([NotNull] this Coordinate from,
-            [NotNull] Coordinate to,
-            double distance, double fraction)
+            [NotNull] Coordinate to, double fraction)
         {
+
+            double angularDistance = from.HaversineDistance(to);
             double lat1 = from.Lat.ConvertToRadian();
             double lat2 = to.Lat.ConvertToRadian();
 
             double lon1 = from.Lon.ConvertToRadian();
             double lon2 = to.Lon.ConvertToRadian();
 
-            double angularSin = Math.Sin(distance);
+            double angularSin = Math.Sin(angularDistance);
 
-            double a = Math.Sin((1 - fraction) * distance) / angularSin;
-            double b = Math.Sin(fraction * distance) / angularSin;
+            double a = Math.Sin((1 - fraction) * angularDistance) / angularSin;
+            double b = Math.Sin(fraction * angularDistance) / angularSin;
 
             double x = a * Math.Cos(lat1) * Math.Cos(lon1) + b * Math.Cos(lat2) * Math.Cos(lon2);
             double y = a * Math.Cos(lat1) * Math.Sin(lon1) + b * Math.Cos(lat2) * Math.Sin(lon2);
@@ -162,6 +163,30 @@ namespace GeodesyLib
             return new Coordinate(
                 newLat.ConvertToDegree(),
                 newLon.ConvertToDegree());
+        }
+
+        public static Coordinate[] Get_N_AmountOfCoordinatesBetween(this Coordinate from,
+            Coordinate to, int n)
+        {
+            Coordinate[] result = new Coordinate[n];
+            
+            double fraction = 1d / n;
+
+            for (int i = 0; i < n; i++)
+            {
+                Coordinate fracturedCoordinate = from.CalculateIntermediatePointByFraction(
+                    to,
+                    fraction * i);
+
+                result[i] = fracturedCoordinate;
+            }
+            
+            for (int i = 0; i < result.Length; i++)
+            {
+                Console.WriteLine(result[i]);
+            }
+
+            return result;
         }
 
 
@@ -192,5 +217,6 @@ namespace GeodesyLib
                 newLat.ConvertToDegree(),
                 clampedLon.ConvertToDegree());
         }
+        
     }
 }

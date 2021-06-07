@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e64d0abb-d638-48da-84bc-7243b52058ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/GeodesyLib/Attributes/OnlyBetweenZeroAndOne.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeodesyLib.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeodesyLib/Calculations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/Calculations.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" afterDir="false" />
     </list>
@@ -44,8 +44,8 @@
       <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/RhumbCalculationTests.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/RhumbCalculations.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Attributes/OnlyBetweenZeroAndOne.cs" />
-      <option value="$PROJECT_DIR$/GeodesyLib/Calculations.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib/Calculations.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1owcEgBBGOuALJEpyM4yrBwPJC8" />
@@ -81,7 +81,8 @@
       <workItem from="1617548062041" duration="2045000" />
       <workItem from="1618899136367" duration="1459000" />
       <workItem from="1620928230981" duration="608000" />
-      <workItem from="1623091173037" duration="3685000" />
+      <workItem from="1623091173037" duration="4171000" />
+      <workItem from="1623095361311" duration="450000" />
     </task>
     <servers />
   </component>
@@ -140,17 +141,30 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs</url>
-          <line>76</line>
-          <properties documentPath="C:\Users\Ertan\Desktop\CSharp\GeodesyLib\GeodesyLib_UnitTest\CalculationTests.cs" initialLine="76" containingFunctionPresentation="method 'CalculateIntermediatePoint_WhenCalled_ReturnsExactResult'">
+          <url>file://$PROJECT_DIR$/GeodesyLib/Calculations.cs</url>
+          <line>183</line>
+          <properties documentPath="C:\Users\Ertan\Desktop\CSharp\GeodesyLib\GeodesyLib\Calculations.cs" initialLine="175" containingFunctionPresentation="method 'Get_N_AmountOfCoordinatesBetween'">
             <startOffsets>
-              <option value="2033" />
+              <option value="7084" />
             </startOffsets>
             <endOffsets>
-              <option value="2080" />
+              <option value="7097" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs</url>
+          <line>110</line>
+          <properties documentPath="C:\Users\Ertan\Desktop\CSharp\GeodesyLib\GeodesyLib_UnitTest\CalculationTests.cs" initialLine="110" containingFunctionPresentation="method 'GetNAmountOfCoordinatesBetween_WhenCalled_ReturnsExactResult'">
+            <startOffsets>
+              <option value="3006" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3075" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
