@@ -3,6 +3,7 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c65391dc_002D1790_002D4fb3_002D8892_002D34eec6f9a49a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CalculateIntersectionPoint_WhenTwoCoordinatesAndBearingsGiven_ReturnsIntersectionCoordinate" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::A6320F1A-A254-49E4-805E-BA78830AFAA4::net5.0::GeodesyLib_UnitTest.SphericalCalculationsTests.CalculateIntersectionPoint_WhenTwoCoordinatesAndBearingsGiven_ReturnsIntersectionCoordinate&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::A6320F1A-A254-49E4-805E-BA78830AFAA4::net5.0::GeodesyLib_UnitTest.SphericalCalculationsTests.CalculateIntersectionPoint_WhenTwoCoordinatesAndBearingsGiven_ThrowsAmbigiousException&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	
