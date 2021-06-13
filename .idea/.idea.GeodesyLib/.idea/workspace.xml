@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e64d0abb-d638-48da-84bc-7243b52058ac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/GeodesyLib.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib/Calculations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/Calculations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib/DataTypes/Coordinate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/DataTypes/Coordinate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib/RhumbCalculations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/RhumbCalculations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib_UnitTest/RhumbCalculationTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib_UnitTest/RhumbCalculationTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeodesyLib/AdditionalCalculations.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeodesyLib/Calculations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/SphericalCalculations.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib_UnitTest/SphericalCalculationsTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +46,9 @@
       <option value="$PROJECT_DIR$/GeodesyLib/DataTypes/Coordinate.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/RhumbCalculations.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib/AdditionalCalculations.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib/SphericalCalculations.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/SphericalCalculationsTests.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1owcEgBBGOuALJEpyM4yrBwPJC8" />
@@ -84,7 +86,7 @@
       <workItem from="1620928230981" duration="608000" />
       <workItem from="1623091173037" duration="4171000" />
       <workItem from="1623095361311" duration="1167000" />
-      <workItem from="1623592856819" duration="3257000" />
+      <workItem from="1623592856819" duration="4895000" />
     </task>
     <servers />
   </component>
@@ -138,24 +140,5 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs</url>
-          <line>108</line>
-          <properties documentPath="C:\Users\Ertan\Desktop\CSharp\GeodesyLib\GeodesyLib_UnitTest\CalculationTests.cs" initialLine="110" containingFunctionPresentation="method 'GetNAmountOfCoordinatesBetween_WhenCalled_ReturnsExactResult'">
-            <startOffsets>
-              <option value="3074" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3144" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

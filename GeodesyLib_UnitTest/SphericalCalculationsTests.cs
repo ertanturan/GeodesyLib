@@ -6,7 +6,7 @@ using NUnit.Framework;
 
 namespace GeodesyLib_UnitTest
 {
-    public class CalculationTests
+    public class SphericalCalculationsTests
     {
         private Coordinate _from;
         private Coordinate _to;
@@ -57,19 +57,23 @@ namespace GeodesyLib_UnitTest
 
             Coordinate result = _from.CalculateMidPoint(_to);
 
-            Coordinate expectedResult = new Coordinate(50.53632687827433d, 1.27461410068055d);
+            Coordinate expectedResult = new Coordinate(50.53632687827433d,
+                1.27461410068055d);
 
             //assert
 
-            Assert.AreEqual(expectedResult.Latitude, result.Latitude, 0.000000001d);
-            Assert.AreEqual(expectedResult.Longitude, result.Longitude, 0.000000001d);
+            Assert.AreEqual(expectedResult.Latitude, result.Latitude, 
+                0.000000001d);
+            Assert.AreEqual(expectedResult.Longitude, result.Longitude,
+                0.000000001d);
         }
 
 
         [Test]
         [TestCase(0, 52.205, 0.119)]
         [TestCase(1, 48.857, 2.351)]
-        [TestCase(0.5, 50.53632687827433d, 1.2746141006782352d)]
+        [TestCase(0.5, 50.53632687827433d, 
+            1.2746141006782352d)]
         public void CalculateIntermediatePoint_WhenCalled_ReturnsExactResult(double fraction,
             double expectedLat, double expectedLon)
         {
@@ -110,8 +114,22 @@ namespace GeodesyLib_UnitTest
 
 
             Assert.That(result.Length, Is.EqualTo(50));
-            Assert.AreEqual(_from.Latitude, result[0].Latitude, 0.0001d);
-            Assert.AreEqual(_from.Longitude, result[0].Longitude, 0.0001d);
+            Assert.AreEqual(_from.Latitude, result[0].Latitude, 
+                0.0000001d);
+            Assert.AreEqual(_from.Longitude, result[0].Longitude, 
+                0.0000001d);
+        }
+
+        [Test]
+        public void CalculateEquirectangularApproximation_WhenCalled_ReturnsExactResult()
+        {
+            //arrange
+            
+            //act
+            double result = _from.CalculateEquirectangularApproximation(_to);
+
+            //assert
+            Assert.AreEqual(result,404.3,0.1);
         }
     }
 }

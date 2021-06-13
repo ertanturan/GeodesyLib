@@ -8,7 +8,7 @@ using GeodesyLib.Exceptions;
 
 namespace GeodesyLib
 {
-    public static class Calculations
+    public static class SphericalCalculations
     {
         // This uses the ‘haversine’ formula to calculate the great-circle distance between two points – that is,
         // the shortest distance over the earth’s surface – giving an ‘as-the-crow-flies’ distance between the points
@@ -140,7 +140,6 @@ namespace GeodesyLib
         public static Coordinate CalculateIntermediatePointByFraction([NotNull] this Coordinate from,
             [NotNull] Coordinate to, double fraction)
         {
-
             double angularDistance = from.HaversineDistance(to);
             double lat1 = from.Latitude.ConvertDegreeToRadian();
             double lat2 = to.Latitude.ConvertDegreeToRadian();
@@ -169,7 +168,7 @@ namespace GeodesyLib
             Coordinate to, int n)
         {
             Coordinate[] result = new Coordinate[n];
-            
+
             double fraction = 1d / n;
 
             for (int i = 0; i < n; i++)
@@ -180,7 +179,7 @@ namespace GeodesyLib
 
                 result[i] = fracturedCoordinate;
             }
-            
+
             for (int i = 0; i < result.Length; i++)
             {
                 Console.WriteLine(result[i]);
@@ -217,6 +216,25 @@ namespace GeodesyLib
                 newLat.ConvertRadianToDegree(),
                 clampedLon.ConvertRadianToDegree());
         }
-        
+
+        public static double CalculateEquirectangularApproximation(this Coordinate from, Coordinate to)
+        {
+            double lat1 = from.Latitude.ConvertDegreeToRadian();
+            double lat2 = to.Latitude.ConvertDegreeToRadian();
+
+            double lon1 = from.Longitude.ConvertDegreeToRadian();
+            double lon2 = to.Longitude.ConvertDegreeToRadian();
+
+            double x = (lon2 - lon1) * Math.Cos((lat1 + lat2) / 2);
+            double y = lat2 - lat1;
+
+            double d = Math.Sqrt(x * x + y * y) * Constants.RADIUS;
+            return d;
+        }
+
+        // JavaScript:	
+        // const x = (λ2-λ1) * Math.cos((φ1+φ2)/2);
+        // const y = (φ2-φ1);
+        // const d = Math.sqrt(x*x + y*y) * R;
     }
 }

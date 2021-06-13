@@ -1,11 +1,11 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\Ertan\AppData\Local\JetBrains\Rider2020.3\resharper-host\temp\Rider\vAny\CoverageData\_GeodesyLib.-1853913732\Snapshot\snapshot.utdcvr</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=97a9f3c3_002D8a5d_002D47de_002Daee4_002D35eb104440c8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CalculationTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ded949be_002De4cb_002D4885_002Dae92_002D3d2a4009b8f1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SphericalCalculationsTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::A6320F1A-A254-49E4-805E-BA78830AFAA4::net5.0::GeodesyLib_UnitTest.CalculationTests&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::A6320F1A-A254-49E4-805E-BA78830AFAA4::net5.0::GeodesyLib_UnitTest.RhumbCalculationTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::A6320F1A-A254-49E4-805E-BA78830AFAA4::net5.0::GeodesyLib_UnitTest.SphericalCalculationsTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	
 	
 	
 	
