@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e64d0abb-d638-48da-84bc-7243b52058ac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeodesyLib.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib_UnitTest/RhumbCalculationTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib_UnitTest/RhumbCalculationTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeodesyLib/SphericalCalculations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/SphericalCalculations.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeodesyLib_UnitTest/SphericalCalculationsTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib_UnitTest/SphericalCalculationsTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,13 +43,13 @@
       <option value="$PROJECT_DIR$/GeodesyLib/DataTypes/Coordinate.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/AdditionalCalculations.cs" />
-      <option value="$PROJECT_DIR$/GeodesyLib/SphericalCalculations.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Utility/Utility.cs" />
-      <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/UtilityTests.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/RhumbCalculations.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/ConstantsTests.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/RhumbCalculationTests.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/UtilityTests.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/SphericalCalculationsTests.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib/SphericalCalculations.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1owcEgBBGOuALJEpyM4yrBwPJC8" />
@@ -87,7 +87,7 @@
       <workItem from="1620928230981" duration="608000" />
       <workItem from="1623091173037" duration="4171000" />
       <workItem from="1623095361311" duration="1167000" />
-      <workItem from="1623592856819" duration="6428000" />
+      <workItem from="1623592856819" duration="12790000" />
     </task>
     <servers />
   </component>
@@ -100,32 +100,32 @@
       <expand>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 20% 197/247" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 0% 301/301" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 20% 197/247" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="GeodesyLib 15% 147/173" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 0% 301/301" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="GeodesyLib 0% 207/207" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 20% 197/247" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="GeodesyLib 15% 147/173" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="GeodesyLib 15% 147/173" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 0% 301/301" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="GeodesyLib 0% 207/207" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="GeodesyLib 0% 207/207" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 20% 197/247" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="GeodesyLib 15% 147/173" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="GeodesyLib 15% 147/173" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Utility 100% 0/6" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 0% 301/301" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="GeodesyLib 0% 207/207" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="GeodesyLib 0% 207/207" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="RhumbCalculations 0% 62/62" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 20% 197/247" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="GeodesyLib 15% 147/173" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="GeodesyLib 15% 147/173" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="RhumbCalculations 18% 51/62" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 0% 301/301" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="GeodesyLib 0% 207/207" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="GeodesyLib 0% 207/207" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Utility 0% 6/6" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
       </expand>
       <select />
@@ -148,5 +148,50 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/GeodesyLib/SphericalCalculations.cs</url>
+          <line>304</line>
+          <properties documentPath="C:\Users\Ertan\Desktop\CSharp\GeodesyLib\GeodesyLib\SphericalCalculations.cs" initialLine="321" containingFunctionPresentation="method 'CalculateIntersectionPoint'">
+            <startOffsets>
+              <option value="12159" />
+            </startOffsets>
+            <endOffsets>
+              <option value="12228" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/GeodesyLib/SphericalCalculations.cs</url>
+          <line>294</line>
+          <properties documentPath="C:\Users\Ertan\Desktop\CSharp\GeodesyLib\GeodesyLib\SphericalCalculations.cs" initialLine="309" containingFunctionPresentation="method 'CalculateIntersectionPoint'">
+            <startOffsets>
+              <option value="11864" />
+            </startOffsets>
+            <endOffsets>
+              <option value="11877" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/GeodesyLib/SphericalCalculations.cs</url>
+          <line>302</line>
+          <properties documentPath="C:\Users\Ertan\Desktop\CSharp\GeodesyLib\GeodesyLib\SphericalCalculations.cs" initialLine="319" containingFunctionPresentation="method 'CalculateIntersectionPoint'">
+            <startOffsets>
+              <option value="12088" />
+            </startOffsets>
+            <endOffsets>
+              <option value="12128" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
