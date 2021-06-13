@@ -11,7 +11,7 @@ namespace GeodesyLib_UnitTest
         [TestCase(270,4.71239)]
         [TestCase(360,6.28319)]
         [TestCase(-200,-3.49066)]
-        public void ConvertDegreeToRadian_WhenCalled_ReturnsExactResult(
+        public void ConvertDegreeToRadian_WhenCalled_ReturnsRadian(
             double degree, double expectedResultAsRadian)
         {
             //act
@@ -25,7 +25,7 @@ namespace GeodesyLib_UnitTest
         [TestCase(4.71239,270)]
         [TestCase(-3.49066,-200)]
         [TestCase(6.28319,360)]
-        public void ConvertRadianToDegree_WhenCalled_ReturnsExactResult(
+        public void ConvertRadianToDegree_WhenCalled_ReturnsDegree(
             double radian, double expectedResultAsDegree)
         {
             //act

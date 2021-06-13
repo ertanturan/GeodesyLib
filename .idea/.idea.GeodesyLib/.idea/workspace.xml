@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e64d0abb-d638-48da-84bc-7243b52058ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib/RhumbCalculations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/RhumbCalculations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib/SphericalCalculations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/SphericalCalculations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib/Utility/Utility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/Utility/Utility.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeodesyLib.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeodesyLib_UnitTest/RhumbCalculationTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib_UnitTest/RhumbCalculationTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeodesyLib_UnitTest/SphericalCalculationsTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib_UnitTest/SphericalCalculationsTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,15 +40,16 @@
       <option value="$PROJECT_DIR$/GeodesyLib/Exceptions/IntersectionAmbiguousException.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Attributes/OnlyBetweenZeroAndOne.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Calculations.cs" />
-      <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/RhumbCalculationTests.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/DataTypes/Coordinate.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/AdditionalCalculations.cs" />
-      <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/SphericalCalculationsTests.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/SphericalCalculations.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Utility/Utility.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/UtilityTests.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/RhumbCalculations.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/ConstantsTests.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/RhumbCalculationTests.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/SphericalCalculationsTests.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1owcEgBBGOuALJEpyM4yrBwPJC8" />
@@ -86,7 +87,7 @@
       <workItem from="1620928230981" duration="608000" />
       <workItem from="1623091173037" duration="4171000" />
       <workItem from="1623095361311" duration="1167000" />
-      <workItem from="1623592856819" duration="5969000" />
+      <workItem from="1623592856819" duration="6428000" />
     </task>
     <servers />
   </component>
@@ -99,32 +100,32 @@
       <expand>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 0% 247/247" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 20% 197/247" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 0% 247/247" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="GeodesyLib 0% 173/173" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 20% 197/247" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="GeodesyLib 15% 147/173" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 0% 247/247" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="GeodesyLib 0% 173/173" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="GeodesyLib 0% 173/173" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 20% 197/247" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="GeodesyLib 15% 147/173" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="GeodesyLib 15% 147/173" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 0% 247/247" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="GeodesyLib 0% 173/173" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="GeodesyLib 0% 173/173" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="RhumbCalculations 0% 62/62" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 20% 197/247" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="GeodesyLib 15% 147/173" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="GeodesyLib 15% 147/173" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Utility 100% 0/6" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 0% 247/247" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="GeodesyLib 0% 173/173" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="GeodesyLib 0% 173/173" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Utility 0% 6/6" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 20% 197/247" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="GeodesyLib 15% 147/173" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="GeodesyLib 15% 147/173" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="RhumbCalculations 18% 51/62" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
       </expand>
       <select />
