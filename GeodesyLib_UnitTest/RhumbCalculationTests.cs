@@ -53,5 +53,22 @@ namespace GeodesyLib_UnitTest
             Assert.AreEqual(expectedLon, result.Lon, 0.01d);
         }
         
+        
+        [Test]
+        public void CalculateRhumbMidPoint_WhenCalled_ReturnsTheExactResult()
+        {
+            //act
+
+            Coordinate result = _from.CalculateRhumbMidPoint(_to);
+
+            Coordinate expectedResult = new Coordinate(50.5301, 1.2215);
+
+            //assert
+
+            Assert.AreEqual(expectedResult.Lat,result.Lat,0.001);
+            Assert.AreEqual(expectedResult.Lon,result.Lon,0.001);
+
+        }
+        
     }
 }

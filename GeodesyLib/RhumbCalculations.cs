@@ -121,9 +121,15 @@ namespace GeodesyLib
 
             double lonMid = (deltaLon * Math.Log(f3) + lon1 * Math.Log(f2) - lon2 * Math.Log(f1))
                             / Math.Log(f2 / f1);
+            
             //longitude normalisation
             lonMid = (lonMid + 540) % 360 - 180;
 
+            if (!lonMid.IsFinite())
+            {
+                lonMid = (lon1 + lon2) / 2;
+            }
+            
             return new Coordinate(latMid.ConvertRadianToDegree(),
                 lonMid.ConvertRadianToDegree());
 

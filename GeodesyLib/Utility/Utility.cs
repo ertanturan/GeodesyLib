@@ -14,5 +14,10 @@
         {
             return radian * (180 / Constants.PI);
         }
+
+        public static bool IsFinite(this double value)
+        {
+            return value > double.NegativeInfinity && value < double.PositiveInfinity;
+        }
     }
 }

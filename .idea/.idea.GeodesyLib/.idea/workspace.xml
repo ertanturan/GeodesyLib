@@ -4,8 +4,8 @@
     <list default="true" id="e64d0abb-d638-48da-84bc-7243b52058ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeodesyLib.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib/Calculations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/Calculations.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeodesyLib/RhumbCalculations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/RhumbCalculations.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeodesyLib/Utility/Utility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/Utility/Utility.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeodesyLib_UnitTest/RhumbCalculationTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib_UnitTest/RhumbCalculationTests.cs" afterDir="false" />
     </list>
@@ -41,12 +41,12 @@
       <option value="$PROJECT_DIR$/GeodesyLib/Exceptions/InfiniteIntersectionException.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Exceptions/IntersectionAmbiguous.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Exceptions/IntersectionAmbiguousException.cs" />
-      <option value="$PROJECT_DIR$/GeodesyLib/Utility/Utility.cs" />
-      <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/RhumbCalculationTests.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Attributes/OnlyBetweenZeroAndOne.cs" />
-      <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Calculations.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib/Utility/Utility.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/RhumbCalculations.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/RhumbCalculationTests.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1owcEgBBGOuALJEpyM4yrBwPJC8" />
@@ -84,7 +84,7 @@
       <workItem from="1620928230981" duration="608000" />
       <workItem from="1623091173037" duration="4171000" />
       <workItem from="1623095361311" duration="1167000" />
-      <workItem from="1623592856819" duration="1762000" />
+      <workItem from="1623592856819" duration="2794000" />
     </task>
     <servers />
   </component>
@@ -144,13 +144,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs</url>
-          <line>110</line>
+          <line>109</line>
           <properties documentPath="C:\Users\Ertan\Desktop\CSharp\GeodesyLib\GeodesyLib_UnitTest\CalculationTests.cs" initialLine="110" containingFunctionPresentation="method 'GetNAmountOfCoordinatesBetween_WhenCalled_ReturnsExactResult'">
             <startOffsets>
-              <option value="2999" />
+              <option value="3031" />
             </startOffsets>
             <endOffsets>
-              <option value="3068" />
+              <option value="3101" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="12" />
