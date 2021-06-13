@@ -1,6 +1,7 @@
 using System;
 using GeodesyLib;
 using GeodesyLib.DataTypes;
+using GeodesyLib.Exceptions;
 using Moq;
 using NUnit.Framework;
 
@@ -113,6 +114,8 @@ namespace GeodesyLib_UnitTest
             Coordinate[] result = _from.Get_N_AmountOfCoordinatesBetween(_to, 50);
 
 
+            Assert.That(result,Is.Not.Null);
+            Assert.That(result,Is.Not.Empty);
             Assert.That(result.Length, Is.EqualTo(50));
             Assert.AreEqual(_from.Latitude, result[0].Latitude, 
                 0.0000001d);
@@ -131,5 +134,51 @@ namespace GeodesyLib_UnitTest
             //assert
             Assert.AreEqual(result,404.3,0.1);
         }
+
+        [Test]
+        public void CalculateIntersectionPoint_WhenTwoCoordinatesAndBearingsGiven_ReturnsIntersectionCoordinate()
+        {
+            //arrange
+
+            Coordinate firstCoordinate = new Coordinate(51.8853, 0.2545);
+            double firstBearing = 108.55d;
+            
+            Coordinate secondCoordinate = new Coordinate(49.0034, 2.5735);
+            double secondBearing = 32.44d;
+
+            //act
+
+            Coordinate result = SphericalCalculations.CalculateIntersectionPoint(
+                firstCoordinate, firstBearing,
+                secondCoordinate, secondBearing);
+
+            //assert
+            
+            Assert.AreEqual(50.9076075004,result.Latitude,0.0000001d);
+            Assert.AreEqual(4.50857464576,result.Longitude,0.0000001d);
+            
+        }
+
+        [Test]
+        public void CalculateIntersectionPoint_WhenTwoCoordinatesAndBearingsGiven_ThrowsAmbigiousException()
+        {
+            //arrange
+
+            Coordinate firstCoordinate = new Coordinate(0, 0);
+            double firstBearing = 0d;
+            
+            Coordinate secondCoordinate = new Coordinate(49.0034, 2.5735);
+            double secondBearing = 32.44d;
+
+            //act
+
+            //assert
+
+            Assert.That(()=>SphericalCalculations.CalculateIntersectionPoint(
+                firstCoordinate, firstBearing,
+                secondCoordinate, secondBearing) , Throws.Exception);
+        }
+        
+        
     }
 }
