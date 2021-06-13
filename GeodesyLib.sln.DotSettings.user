@@ -2,7 +2,9 @@
 	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\Ertan\AppData\Local\JetBrains\Rider2020.3\resharper-host\temp\Rider\vAny\CoverageData\_GeodesyLib.-1853913732\Snapshot\snapshot.utdcvr</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b3263fd5_002Df1d2_002D4a27_002D94c5_002Dbf59416aed4f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="IsFinite_WhenCalled_ReturnsBool" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::A6320F1A-A254-49E4-805E-BA78830AFAA4::net5.0::GeodesyLib_UnitTest.RhumbCalculationTests.CalculateRhumbMidPoint_WhenCalled_ReturnsTheExactResult&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::A6320F1A-A254-49E4-805E-BA78830AFAA4::net5.0::GeodesyLib_UnitTest.RhumbCalculationTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::A6320F1A-A254-49E4-805E-BA78830AFAA4::net5.0::GeodesyLib_UnitTest.SphericalCalculationsTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::A6320F1A-A254-49E4-805E-BA78830AFAA4::net5.0::GeodesyLib_UnitTest.UtilityTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	

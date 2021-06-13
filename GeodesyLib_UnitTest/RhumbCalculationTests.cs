@@ -17,7 +17,7 @@ namespace GeodesyLib_UnitTest
         }
 
         [Test]
-        public void CalculateRhumbDistance_WhenCalled_ReturnsExactResult()
+        public void CalculateRhumbDistance_WhenCalled_ReturnsRhumbDistance()
         {
             //act
 
@@ -42,8 +42,8 @@ namespace GeodesyLib_UnitTest
 
         [Test]
         [TestCase(100, 12, 53.084266, 0.4302)]
-        public void CalculateRhumbDestination_WhenCalled_ReturnsExactResult(double distance,
-            double bearing, double expectedLat , double expectedLon)
+        public void CalculateRhumbDestination_WhenCalled_ReturnsRhumbDestination(
+            double distance, double bearing, double expectedLat , double expectedLon)
         {
             //act
             Coordinate result =  _from.CalculateRhumbDestination(distance,bearing);
@@ -55,7 +55,7 @@ namespace GeodesyLib_UnitTest
         
         
         [Test]
-        public void CalculateRhumbMidPoint_WhenCalled_ReturnsTheExactResult()
+        public void CalculateRhumbMidPoint_WhenCalled_ReturnsRhumbMidpoint()
         {
             //act
 

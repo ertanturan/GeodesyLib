@@ -19,7 +19,7 @@ namespace GeodesyLib_UnitTest
         }
 
         [Test]
-        public void HaversineDistance_WhenCalled_ReturnsTheExactResult()
+        public void HaversineDistance_WhenCalled_ReturnsSphericalDistance()
         {
             //act
             double result = _from.HaversineDistance(_to);
@@ -41,7 +41,7 @@ namespace GeodesyLib_UnitTest
         }
 
         [Test]
-        public void CalculateBearing_WhenCalled_ReturnsTheExactResult()
+        public void CalculateBearing_WhenCalled_ReturnsBearing()
         {
             //act
             double result = _from.CalculateBearing(_to
@@ -51,7 +51,7 @@ namespace GeodesyLib_UnitTest
         }
 
         [Test]
-        public void CalculateMidPoint_WhenCalled_ReturnsTheExactResult()
+        public void CalculateMidPoint_WhenCalled_ReturnsMidPoint()
         {
             //act
 
@@ -74,8 +74,8 @@ namespace GeodesyLib_UnitTest
         [TestCase(1, 48.857, 2.351)]
         [TestCase(0.5, 50.53632687827433d, 
             1.2746141006782352d)]
-        public void CalculateIntermediatePoint_WhenCalled_ReturnsExactResult(double fraction,
-            double expectedLat, double expectedLon)
+        public void CalculateIntermediatePoint_WhenCalled_ReturnsIntermediateCoordinate(
+            double fraction, double expectedLat, double expectedLon)
         {
             //act
             double distance = _from.HaversineDistance(_to);
@@ -91,8 +91,8 @@ namespace GeodesyLib_UnitTest
 
         [Test]
         [TestCase(100, 12, 53.084266, 0.4302)]
-        public void CalculateDestinationPoint_WhenCalled_ReturnsExactResult(double distance,
-            double bearing,
+        public void CalculateDestinationPoint_WhenCalled_ReturnsDestinationCoordinate(
+            double distance, double bearing,
             double expectedLat, double expectedLon)
         {
             //act
@@ -106,7 +106,7 @@ namespace GeodesyLib_UnitTest
 
 
         [Test]
-        public void GetNAmountOfCoordinatesBetween_WhenCalled_ReturnsExactResult()
+        public void GetNAmountOfCoordinatesBetween_WhenCalled_ReturnsNAmountOfCoordinates()
         {
             //act
 
@@ -121,7 +121,7 @@ namespace GeodesyLib_UnitTest
         }
 
         [Test]
-        public void CalculateEquirectangularApproximation_WhenCalled_ReturnsExactResult()
+        public void CalculateEquirectangularApproximation_WhenCalled_ReturnsApproximateResult()
         {
             //arrange
             
