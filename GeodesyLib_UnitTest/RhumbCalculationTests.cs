@@ -49,8 +49,8 @@ namespace GeodesyLib_UnitTest
             Coordinate result =  _from.CalculateRhumbDestination(distance,bearing);
             
             //assert
-            Assert.AreEqual(expectedLat, result.Lat, 0.01d);
-            Assert.AreEqual(expectedLon, result.Lon, 0.01d);
+            Assert.AreEqual(expectedLat, result.Latitude, 0.01d);
+            Assert.AreEqual(expectedLon, result.Longitude, 0.01d);
         }
         
         
@@ -65,8 +65,8 @@ namespace GeodesyLib_UnitTest
 
             //assert
 
-            Assert.AreEqual(expectedResult.Lat,result.Lat,0.001);
-            Assert.AreEqual(expectedResult.Lon,result.Lon,0.001);
+            Assert.AreEqual(expectedResult.Latitude,result.Latitude,0.001);
+            Assert.AreEqual(expectedResult.Longitude,result.Longitude,0.001);
 
         }
         

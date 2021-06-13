@@ -61,9 +61,8 @@ namespace GeodesyLib_UnitTest
 
             //assert
 
-            Assert.AreEqual(expectedResult.Lat, result.Lat, 0.000000001d);
-            Assert.AreEqual(expectedResult.Lon, result.Lon, 0.000000001d);
-
+            Assert.AreEqual(expectedResult.Latitude, result.Latitude, 0.000000001d);
+            Assert.AreEqual(expectedResult.Longitude, result.Longitude, 0.000000001d);
         }
 
 
@@ -82,8 +81,8 @@ namespace GeodesyLib_UnitTest
 
 
             //assert
-            Assert.AreEqual(expectedLat, result.Lat, 0.0000001d);
-            Assert.AreEqual(expectedLon, result.Lon, 0.0000001d);
+            Assert.AreEqual(expectedLat, result.Latitude, 0.0000001d);
+            Assert.AreEqual(expectedLon, result.Longitude, 0.0000001d);
         }
 
         [Test]
@@ -97,8 +96,8 @@ namespace GeodesyLib_UnitTest
             Coordinate result = _from.CalculateDestinationPoint(distance, bearing);
 
             //assert
-            Assert.AreEqual(expectedLat, result.Lat, 0.0001d);
-            Assert.AreEqual(expectedLon, result.Lon, 0.0001d);
+            Assert.AreEqual(expectedLat, result.Latitude, 0.0001d);
+            Assert.AreEqual(expectedLon, result.Longitude, 0.0001d);
         }
 
 
@@ -111,8 +110,8 @@ namespace GeodesyLib_UnitTest
 
 
             Assert.That(result.Length, Is.EqualTo(50));
-            Assert.That(_from.Lat, Is.EqualTo(result[0].Lat));
-            Assert.That(_from.Lon, Is.EqualTo(result[0].Lon));
+            Assert.AreEqual(_from.Latitude, result[0].Latitude, 0.0001d);
+            Assert.AreEqual(_from.Longitude, result[0].Longitude, 0.0001d);
         }
     }
 }

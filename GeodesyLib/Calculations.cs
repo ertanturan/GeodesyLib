@@ -16,11 +16,11 @@ namespace GeodesyLib
         public static double HaversineDistance([NotNull] this Coordinate from,
             [NotNull] Coordinate to)
         {
-            double lat1 = to.Lat.ConvertDegreeToRadian();
-            double lat2 = from.Lat.ConvertDegreeToRadian();
+            double lat1 = to.Latitude.ConvertDegreeToRadian();
+            double lat2 = from.Latitude.ConvertDegreeToRadian();
 
-            double lon1 = to.Lon.ConvertDegreeToRadian();
-            double lon2 = from.Lon.ConvertDegreeToRadian();
+            double lon1 = to.Longitude.ConvertDegreeToRadian();
+            double lon2 = from.Longitude.ConvertDegreeToRadian();
 
             double latDelta = lat2 - lat1;
             double lonDelta = lon2 - lon1;
@@ -49,11 +49,11 @@ namespace GeodesyLib
         public static double CalculateSphericalLawOfCosines([NotNull] this Coordinate from,
             [NotNull] Coordinate to)
         {
-            double lat1 = from.Lat.ConvertDegreeToRadian();
-            double lat2 = to.Lat.ConvertDegreeToRadian();
+            double lat1 = from.Latitude.ConvertDegreeToRadian();
+            double lat2 = to.Latitude.ConvertDegreeToRadian();
 
-            double lon1 = from.Lon.ConvertDegreeToRadian();
-            double lon2 = to.Lon.ConvertDegreeToRadian();
+            double lon1 = from.Longitude.ConvertDegreeToRadian();
+            double lon2 = to.Longitude.ConvertDegreeToRadian();
 
             double lonDelta = lon2 - lon1;
 
@@ -76,11 +76,11 @@ namespace GeodesyLib
         /// <returns></returns>
         public static double CalculateBearing(this Coordinate from, Coordinate to)
         {
-            double lat1 = from.Lat.ConvertDegreeToRadian();
-            double lat2 = to.Lat.ConvertDegreeToRadian();
+            double lat1 = from.Latitude.ConvertDegreeToRadian();
+            double lat2 = to.Latitude.ConvertDegreeToRadian();
 
-            double lon1 = from.Lon.ConvertDegreeToRadian();
-            double lon2 = to.Lon.ConvertDegreeToRadian();
+            double lon1 = from.Longitude.ConvertDegreeToRadian();
+            double lon2 = to.Longitude.ConvertDegreeToRadian();
 
             double lonDelta = lon2 - lon1;
 
@@ -97,11 +97,11 @@ namespace GeodesyLib
         public static Coordinate CalculateMidPoint([NotNull] this Coordinate from,
             [NotNull] Coordinate to)
         {
-            double lat1 = from.Lat.ConvertDegreeToRadian();
-            double lat2 = to.Lat.ConvertDegreeToRadian();
+            double lat1 = from.Latitude.ConvertDegreeToRadian();
+            double lat2 = to.Latitude.ConvertDegreeToRadian();
 
-            double lon1 = from.Lon.ConvertDegreeToRadian();
-            double lon2 = to.Lon.ConvertDegreeToRadian();
+            double lon1 = from.Longitude.ConvertDegreeToRadian();
+            double lon2 = to.Longitude.ConvertDegreeToRadian();
 
             double lonDelta = lon2 - lon1;
 
@@ -142,11 +142,11 @@ namespace GeodesyLib
         {
 
             double angularDistance = from.HaversineDistance(to);
-            double lat1 = from.Lat.ConvertDegreeToRadian();
-            double lat2 = to.Lat.ConvertDegreeToRadian();
+            double lat1 = from.Latitude.ConvertDegreeToRadian();
+            double lat2 = to.Latitude.ConvertDegreeToRadian();
 
-            double lon1 = from.Lon.ConvertDegreeToRadian();
-            double lon2 = to.Lon.ConvertDegreeToRadian();
+            double lon1 = from.Longitude.ConvertDegreeToRadian();
+            double lon2 = to.Longitude.ConvertDegreeToRadian();
 
             double angularSin = Math.Sin(angularDistance);
 
@@ -194,8 +194,8 @@ namespace GeodesyLib
             double distance
             , double bearing)
         {
-            double lat1 = from.Lat.ConvertDegreeToRadian();
-            double lon1 = from.Lon.ConvertDegreeToRadian();
+            double lat1 = from.Latitude.ConvertDegreeToRadian();
+            double lon1 = from.Longitude.ConvertDegreeToRadian();
 
             double rBearing = bearing.ConvertDegreeToRadian();
 
