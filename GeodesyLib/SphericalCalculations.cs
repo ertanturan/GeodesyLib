@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
-using System.Reflection;
-using System.Reflection.Metadata;
-using GeodesyLib.Attributes;
 using GeodesyLib.DataTypes;
-using GeodesyLib.Exceptions;
 
 namespace GeodesyLib
 {

@@ -15,9 +15,6 @@
     <e p="C:\Users\Ertan\Desktop\CSharp\GeodesyLib" t="IncludeFlat">
       <e p="GeodesyLib" t="IncludeRecursive">
         <e p="AdditionalCalculations.cs" t="Include" />
-        <e p="Attributes" t="Include">
-          <e p="OnlyBetweenZeroAndOne.cs" t="Include" />
-        </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="DataTypes" t="Include">
           <e p="Coordinate.cs" t="Include" />
@@ -54,6 +51,7 @@
         </e>
         <e p="RhumbCalculationTests.cs" t="Include" />
         <e p="SphericalCalculationsTests.cs" t="Include" />
+        <e p="UtilityTests.cs" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
     </e>

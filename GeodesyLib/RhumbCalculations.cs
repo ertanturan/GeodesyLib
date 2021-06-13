@@ -124,7 +124,7 @@ namespace GeodesyLib
             //longitude normalisation
             lonMid = (lonMid + 540) % 360 - 180;
 
-            if (!lonMid.IsFinite())
+            if (!double.IsFinite(lonMid))
             {
                 lonMid = (lon1 + lon2) / 2;
             }
