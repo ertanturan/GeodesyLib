@@ -4,9 +4,8 @@
     <list default="true" id="e64d0abb-d638-48da-84bc-7243b52058ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeodesyLib.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib/Calculations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/Calculations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib/Utility/Utility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/Utility/Utility.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeodesyLib/SphericalCalculations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/SphericalCalculations.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeodesyLib_UnitTest/SphericalCalculationsTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib_UnitTest/SphericalCalculationsTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +24,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3BB42FD3-8BD8-407B-9667-FBF8CE1367E9/d9/90877a3c/NotNullAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3BB42FD3-8BD8-407B-9667-FBF8CE1367E9/30/Exception.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -34,16 +34,22 @@
       <option value="$PROJECT_DIR$/GeodesyLib/Constants.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/UnitTest1.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Utility.cs" />
-      <option value="$PROJECT_DIR$/GeodesyLib/DataTypes/Coordinate.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/GeodesyLib.csproj" />
       <option value="$PROJECT_DIR$/GeodesyLib/Exceptions/InfiniteIntersectionException.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Exceptions/IntersectionAmbiguous.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Exceptions/IntersectionAmbiguousException.cs" />
-      <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/RhumbCalculationTests.cs" />
-      <option value="$PROJECT_DIR$/GeodesyLib/RhumbCalculations.cs" />
-      <option value="$PROJECT_DIR$/GeodesyLib/Utility/Utility.cs" />
-      <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib/Attributes/OnlyBetweenZeroAndOne.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Calculations.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib/DataTypes/Coordinate.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib/AdditionalCalculations.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib/Utility/Utility.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib/RhumbCalculations.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/ConstantsTests.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/RhumbCalculationTests.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/UtilityTests.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/SphericalCalculationsTests.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib/SphericalCalculations.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1owcEgBBGOuALJEpyM4yrBwPJC8" />
@@ -61,7 +67,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
+    <property name="settings.editor.selected.configurable" value="RiderDotCoverFilteringPageId" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -74,7 +80,14 @@
       <workItem from="1614200989935" duration="1325000" />
       <workItem from="1614279651154" duration="10340000" />
       <workItem from="1616087948594" duration="9049000" />
-      <workItem from="1617487116405" duration="6664000" />
+      <workItem from="1617487116405" duration="7076000" />
+      <workItem from="1617536877524" duration="599000" />
+      <workItem from="1617548062041" duration="2045000" />
+      <workItem from="1618899136367" duration="1459000" />
+      <workItem from="1620928230981" duration="608000" />
+      <workItem from="1623091173037" duration="4171000" />
+      <workItem from="1623095361311" duration="1167000" />
+      <workItem from="1623592856819" duration="16681000" />
     </task>
     <servers />
   </component>
@@ -82,30 +95,37 @@
     <option name="coveragePercentColumnWidth" value="150" />
     <option name="sortOrder" value="DESCENDING" />
     <option name="sortedColumn" value="1" />
-    <option name="symbolColumnWidth" value="858" />
+    <option name="symbolColumnWidth" value="1250" />
     <coverage-tree-state>
       <expand>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 82% 28/154" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 0% 299/299" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 82% 28/154" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="GeodesyLib 79% 24/113" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 0% 299/299" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="GeodesyLib 0% 206/206" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 82% 28/154" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="GeodesyLib 79% 24/113" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="GeodesyLib 79% 24/113" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 0% 299/299" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="GeodesyLib 0% 206/206" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="GeodesyLib 0% 206/206" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 82% 28/154" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="GeodesyLib 79% 24/113" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="GeodesyLib 79% 24/113" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Calculations 88% 9/72" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 0% 299/299" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="GeodesyLib 0% 206/206" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="GeodesyLib 0% 206/206" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="RhumbCalculations 0% 62/62" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 0% 299/299" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="GeodesyLib 0% 206/206" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="GeodesyLib 0% 206/206" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Utility 0% 6/6" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
       </expand>
       <select />

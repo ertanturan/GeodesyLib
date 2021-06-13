@@ -2,13 +2,13 @@
 {
     public class Coordinate
     {
-        public double Lat { get; }
-        public double Lon { get; }
+        public double Latitude { get; }
+        public double Longitude { get; }
 
-        public Coordinate(double lat, double lon)
+        public Coordinate(double latitude, double longitude)
         {
-            Lat = lat;
-            Lon = lon;
+            Latitude = latitude;
+            Longitude = longitude;
         }
 
         
