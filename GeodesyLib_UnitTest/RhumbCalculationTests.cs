@@ -32,7 +32,7 @@ namespace GeodesyLib_UnitTest
         {
             //act
 
-            double result = _from.CalculateRhumbInitialBearing(_to);
+            double result = _from.CalculateRhumbBearing(_to);
             
             //assert
             

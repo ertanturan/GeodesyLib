@@ -45,7 +45,7 @@ namespace GeodesyLib_UnitTest
         public void CalculateBearing_WhenCalled_ReturnsTheExactResult()
         {
             //act
-            double result = _from.CalculateInitialBearing(_to
+            double result = _from.CalculateBearing(_to
             );
             //assert
             Assert.That(result, Is.EqualTo(156.16658258152279));
