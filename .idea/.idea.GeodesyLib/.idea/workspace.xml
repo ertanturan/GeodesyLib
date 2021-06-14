@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e64d0abb-d638-48da-84bc-7243b52058ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib/Exceptions/InfiniteIntersectionException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/Exceptions/InfiniteIntersectionException.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeodesyLib.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeodesyLib/RhumbCalculations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/RhumbCalculations.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeodesyLib/SphericalCalculations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/SphericalCalculations.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeodesyLib_UnitTest/SphericalCalculationsTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib_UnitTest/SphericalCalculationsTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,13 +44,14 @@
       <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/CalculationTests.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/AdditionalCalculations.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Utility/Utility.cs" />
-      <option value="$PROJECT_DIR$/GeodesyLib/RhumbCalculations.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/ConstantsTests.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/RhumbCalculationTests.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/UtilityTests.cs" />
-      <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/SphericalCalculationsTests.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/Exceptions/InfiniteIntersectionException.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib/Utility/Constants.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib_UnitTest/SphericalCalculationsTests.cs" />
       <option value="$PROJECT_DIR$/GeodesyLib/SphericalCalculations.cs" />
+      <option value="$PROJECT_DIR$/GeodesyLib/RhumbCalculations.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1owcEgBBGOuALJEpyM4yrBwPJC8" />
@@ -68,6 +71,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="RiderDotCoverFilteringPageId" />
   </component>
+  <component name="RunManager" selected="c65391dc-1790-4fb3-8892-34eec6f9a49a" />
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -87,7 +91,7 @@
       <workItem from="1623091173037" duration="4171000" />
       <workItem from="1623095361311" duration="1167000" />
       <workItem from="1623592856819" duration="16681000" />
-      <workItem from="1623690540458" duration="1662000" />
+      <workItem from="1623690540458" duration="3300000" />
     </task>
     <servers />
   </component>
