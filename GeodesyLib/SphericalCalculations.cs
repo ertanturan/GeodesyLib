@@ -6,6 +6,14 @@ using GeodesyLib.Exceptions;
 
 namespace GeodesyLib
 {
+    /// <summary>
+    /// All these formulas are for calculations on the basis of a spherical earth (ignoring ellipsoidal effects) –
+    /// which is accurate enough* for most purposes…
+    /// [In fact, the earth is very slightly ellipsoidal; using a spherical model gives errors typically up to 0.3%]
+    /// 
+    /// Summary taken from : https://www.movable-type.co.uk/scripts/latlong.html
+    /// 
+    /// </summary>
     public static class SphericalCalculations
     {
         // This uses the ‘haversine’ formula to calculate the great-circle distance between
@@ -78,7 +86,7 @@ namespace GeodesyLib
         /// </summary>
         /// <param name="from">Starting point </param>
         /// <param name="to">Final point</param>
-        /// <returns></returns>
+        /// <returns>double</returns>
         public static double CalculateBearing(this Coordinate from, Coordinate to)
         {
             double lat1 = from.Latitude.ConvertDegreeToRadian();
