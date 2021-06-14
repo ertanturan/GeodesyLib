@@ -76,8 +76,8 @@ namespace GeodesyLib
         /// from the start point to the end point
         /// 
         /// </summary>
-        /// <param name="from">starting coordinate, starting point of a destination </param>
-        /// <param name="to">final coordinate, end point of a destination</param>
+        /// <param name="from">Starting point </param>
+        /// <param name="to">Final point</param>
         /// <returns></returns>
         public static double CalculateBearing(this Coordinate from, Coordinate to)
         {
@@ -99,6 +99,12 @@ namespace GeodesyLib
             return bearing;
         }
 
+        /// <summary>
+        /// This is the half-way point along a great circle path between the two points.
+        /// </summary>
+        /// <param name="from">Starting point</param>
+        /// <param name="to">Final point</param>
+        /// <returns></returns>
         public static Coordinate CalculateMidPoint([NotNull] this Coordinate from,
             [NotNull] Coordinate to)
         {
@@ -169,6 +175,13 @@ namespace GeodesyLib
                 newLon.ConvertRadianToDegree());
         }
 
+        /// <summary>
+        /// Returns an n length array of Coordinates between two coordinates. 
+        /// </summary>
+        /// <param name="from">Starting point</param>
+        /// <param name="to">Final point</param>
+        /// <param name="n">Amount of points needed between.</param>
+        /// <returns>Coordinate array</returns>
         public static Coordinate[] Get_N_AmountOfCoordinatesBetween(this Coordinate from,
             Coordinate to, int n)
         {
@@ -193,7 +206,13 @@ namespace GeodesyLib
             return result;
         }
 
-
+        /// <summary>
+        /// Calculates and returns destination coordinate given starting coordinate,bearing and distance.
+        /// </summary>
+        /// <param name="from"></param>
+        /// <param name="distance"></param>
+        /// <param name="bearing"></param>
+        /// <returns></returns>
         public static Coordinate CalculateDestinationPoint([NotNull] this Coordinate from,
             double distance
             , double bearing)
@@ -222,6 +241,12 @@ namespace GeodesyLib
                 clampedLon.ConvertRadianToDegree());
         }
 
+        /// <summary>
+        /// When precision is less important and performance is more needed this function should be used to calculate distance between two coordinates.
+        /// </summary>
+        /// <param name="from">Starting point</param>
+        /// <param name="to">Final point</param>
+        /// <returns>The approximate distance between two coordinates.</returns>
         public static double CalculateEquirectangularApproximation(
             [NotNull] this  Coordinate from, [NotNull]Coordinate to)
         {
@@ -237,10 +262,20 @@ namespace GeodesyLib
             double d = Math.Sqrt(x * x + y * y) * Constants.RADIUS;
             return d;
         }
-
+        
+        /// <summary>
+        /// This function finds the intersection of two paths with two coordinates and bearings given.
+        /// </summary>
+        /// <param name="point1">The first coordinate of the first starting point</param>
+        /// <param name="bearing1">The bearing/direction of the first starting point</param>
+        /// <param name="point2">The second coordinate of the second starting point</param>
+        /// <param name="bearing2">The bearing/direction of the second starting point</param>
+        /// <returns>Returns Coordinate</returns>
+        /// <exception cref="InfiniteIntersectionException">An error thrown only when there's infinite amount of intersection found.</exception>
+        /// <exception cref="IntersectionAmbiguousException">An error thrown only when intersection can not be calculated for sure.</exception>
         public static Coordinate CalculateIntersectionPoint(
-            Coordinate point1, double bearing1,
-            Coordinate point2, double bearing2)
+           [NotNull] Coordinate point1, double bearing1,
+           [NotNull] Coordinate point2, double bearing2)
         {
             double lat1 = point1.Latitude.ConvertDegreeToRadian(),
                 lon1 = point1.Longitude.ConvertDegreeToRadian();
@@ -306,5 +341,6 @@ namespace GeodesyLib
 
             return new Coordinate(newLat, newLon);
         }
+        
     }
 }
