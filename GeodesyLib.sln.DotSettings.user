@@ -1,20 +1,8 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\Ertan\AppData\Local\JetBrains\Rider2020.3\resharper-host\temp\Rider\vAny\CoverageData\_GeodesyLib.-1853913732\Snapshot\snapshot.utdcvr</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c65391dc_002D1790_002D4fb3_002D8892_002D34eec6f9a49a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CalculateIntersectionPoint_WhenTwoCoordinatesAndBearingsGiven_ReturnsIntersectionCoordinate" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::A6320F1A-A254-49E4-805E-BA78830AFAA4::net5.0::GeodesyLib_UnitTest.SphericalCalculationsTests&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
-&lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f704cc68_002Dfb81_002D4d15_002Dad03_002Daa4c646b1d3f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SphericalCalculationsTests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::A6320F1A-A254-49E4-805E-BA78830AFAA4::net5.0::GeodesyLib_UnitTest.SphericalCalculationsTests&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
-&lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fff89fd0_002D2466_002D44a2_002Dac42_002Db83b2a3cb1a8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="SphericalCalculationsTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::A6320F1A-A254-49E4-805E-BA78830AFAA4::net5.0::GeodesyLib_UnitTest.SphericalCalculationsTests&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
-&lt;/SessionState&gt;</s:String>
+	
+	
+	
 	
 	
 	

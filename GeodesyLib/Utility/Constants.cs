@@ -1,6 +1,8 @@
 ﻿namespace GeodesyLib
 {
-    
+    /// <summary>
+    /// This class contains only constant values that were not meant to change.
+    /// </summary>
     public static class Constants
     {
         /// <summary>

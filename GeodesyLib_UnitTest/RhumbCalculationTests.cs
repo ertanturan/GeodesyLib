@@ -4,6 +4,8 @@ using NUnit.Framework;
 
 namespace GeodesyLib_UnitTest
 {
+    
+    
     public class RhumbCalculationTests
     {
         private Coordinate _from;

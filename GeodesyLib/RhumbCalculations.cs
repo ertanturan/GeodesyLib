@@ -4,6 +4,11 @@ using GeodesyLib.DataTypes;
 
 namespace GeodesyLib
 {
+    
+    /// <summary>
+    /// A ‘rhumb line’ (or loxodrome) is a path of constant bearing, which crosses all meridians at the same angle.
+    /// Rhumb lines are straight lines on a Mercator Projection map 
+    /// </summary>
     public static class RhumbCalculations
     {
         /// <summary>
