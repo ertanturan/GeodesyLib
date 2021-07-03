@@ -227,7 +227,7 @@ namespace GeodesyLib
         /// <param name="distance">End point</param>
         /// <param name="bearing">Direction</param>
         /// <returns>Returns the destination coordinate given starting coordinate,
-        /// distance(meters) and bearing</returns>
+        /// distance(km) and bearing</returns>
         public static Coordinate CalculateDestinationPoint([NotNull] this Coordinate from,
             double distance
             , double bearing)
