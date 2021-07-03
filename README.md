@@ -11,10 +11,14 @@
 2. Download the lates release of the package.
 3. Import it to your unity project.
 
-## Documentation
+## Code Documentation
 
 A doxygen output for the documentation of the code is included and will be included at every release.
 So, head to the releases page and find the document in the downloads section of the related version.
+ 
+## Calculations
+All of the calculations used in this library can be found [here](https://www.movable-type.co.uk/scripts/latlong.html) 
+ 
 
 ## Examples
 
