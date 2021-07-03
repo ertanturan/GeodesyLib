@@ -16,6 +16,32 @@ So, head to the releases page and find the document in the downloads section of 
 
 ## Examples
 
+From Coordinate `Coordinate _from = new Coordinate(52.205, 0.119);`
+To Coordinate `Coordinate _to = new Coordinate(48.857, 2.351);`
+
+### Haversine Distance
+
+`double result = _from.HaversineDistance(_to);`
+
+### Bearing
+
+`double result = _from.CalculateBearing(_to);`
+
+### Spherical Law Of Cosines
+
+`double result = _from.CalculateSphericalLawOfCosines(_to);`
+
+### Calculate Mid Point
+
+`Coordinate result = _from.CalculateMidPoint(_to);`
+
+### Calculate Intermediate Point
+
+` double distance = _from.HaversineDistance(_to);`
+
+` Coordinate result = _from.CalculateIntermediatePointByFraction(_to,fraction);`
+
+
 # Courtesy
 
 Transcoded from `JavaScript originals` by *Chris Veness (C) 2005-2019*
