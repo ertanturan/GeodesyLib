@@ -1,6 +1,7 @@
 # GeodesyLib
 
 
+# Usage
 
 ## Import
 
@@ -12,6 +13,8 @@
 
 A doxygen output for the documentation of the code is included and will be included at every release.
 So, head to the releases page and find the document in the downloads section of the related version.
+
+## Examples
 
 # Courtesy
 
