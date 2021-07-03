@@ -28,7 +28,9 @@ To Coordinate `Coordinate _to = new Coordinate(48.857, 2.351);`
  
 ### Haversine Distance
 
- ```csharp double result = _from.HaversineDistance(_to);```
+ ```csharp 
+ double result = _from.HaversineDistance(_to);
+ ```
 
 ### Bearing
 
@@ -44,30 +46,43 @@ To Coordinate `Coordinate _to = new Coordinate(48.857, 2.351);`
 
 ### Calculate Mid Point
 
- ```csharp Coordinate result = _from.CalculateMidPoint(_to);```
+ ```csharp 
+ Coordinate result = _from.CalculateMidPoint(_to);
+ ```
 
 ### Calculate Intermediate Point
 
- ```csharp double distance = _from.HaversineDistance(_to);```
+ ```csharp 
+ double distance = _from.HaversineDistance(_to);
+ ```
 
- ```csharp Coordinate result = _from.CalculateIntermediatePointByFraction(_to,fraction);```
+ ```csharp 
+ Coordinate result = _from.CalculateIntermediatePointByFraction(_to,fraction);
+ ```
  
 ### Calculate Destination Point
  
- ```csharp Coordinate result = _from.CalculateDestinationPoint(_from, _to);```
+ ```csharp 
+ Coordinate result = _from.CalculateDestinationPoint(_from, _to);
+ ```
  
 ### Get N Coordinated Between Two Coordinates
  
- ```csharp Coordinate[] result = _from.GetNCoordinatesBetweenTwoCoordinates(_to, 50);```
+ ```csharp 
+ Coordinate[] result = _from.GetNCoordinatesBetweenTwoCoordinates(_to, 50);
+ ```
 
 ### Calculate Equirectangular Approximation
  
- ```csharp double result = _from.CalculateEquirectangularApproximation(_to);```
+ ```csharp 
+ double result = _from.CalculateEquirectangularApproximation(_to);
+ ```
  
 
  ### Calculate Intersection Point
  
- ```csharp Coordinate firstCoordinate = new Coordinate(51.8853, 0.2545);
+ ```csharp 
+ Coordinate firstCoordinate = new Coordinate(51.8853, 0.2545);
             double firstBearing = 108.55d;
 
             Coordinate secondCoordinate = new Coordinate(49.0034, 2.5735);
