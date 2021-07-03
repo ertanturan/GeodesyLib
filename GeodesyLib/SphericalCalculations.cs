@@ -195,7 +195,7 @@ namespace GeodesyLib
         /// <param name="to">Final point</param>
         /// <param name="n">Amount of points needed between.</param>
         /// <returns>Coordinate array</returns>
-        public static Coordinate[] Get_N_AmountOfCoordinatesBetween(this Coordinate from,
+        public static Coordinate[] GetNCoordinatesBetweenTwoCoordinates(this Coordinate from,
             Coordinate to, int n)
         {
             Coordinate[] result = new Coordinate[n];

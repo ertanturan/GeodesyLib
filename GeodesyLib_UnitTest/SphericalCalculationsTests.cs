@@ -112,11 +112,11 @@ namespace GeodesyLib_UnitTest
 
 
         [Test]
-        public void GetNAmountOfCoordinatesBetween_WhenCalled_ReturnsNAmountOfCoordinates()
+        public void GetNCoordinatesBetweenTwoCoordinates_WhenCalled_ReturnsNAmountOfCoordinates()
         {
             //act
 
-            Coordinate[] result = _from.Get_N_AmountOfCoordinatesBetween(_to, 50);
+            Coordinate[] result = _from.GetNCoordinatesBetweenTwoCoordinates(_to, 50);
 
 
             Assert.That(result, Is.Not.Null);
