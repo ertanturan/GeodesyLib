@@ -17,9 +17,6 @@ This library contains the most used geodetic calculations both in spherical and 
 A doxygen output for the documentation of the code is included and will be included at every release.
 So, head to the releases page and find the document in the downloads section of the related version.
  
-## Calculations
-All of the calculations used in this library can be found [here](https://www.movable-type.co.uk/scripts/latlong.html).
- 
 ## Examples
 
 From Coordinate 
@@ -113,6 +110,7 @@ Transcoded from `JavaScript originals` by *Chris Veness (C) 2005-2019*
 and several `C++ classes` by *Charles F.F. Karney (C) 2008-2021 and
 published under the same `MIT License`.
 
+All of the calculations used in this library can be found [here](https://www.movable-type.co.uk/scripts/latlong.html).
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
