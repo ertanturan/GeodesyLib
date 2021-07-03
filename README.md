@@ -12,3 +12,9 @@
 
 A doxygen output for the documentation of the code is included and will be included at every release.
 So, head to the releases page and find the document in the downloads section of the related version.
+
+# Courtesy
+
+Transcoded from `JavaScript originals`_ by *Chris Veness (C) 2005-2019*
+and several `C++ classes`_ by *Charles F.F. Karney (C) 2008-2021* and
+published under the same `MIT License`_.
