@@ -24,7 +24,7 @@ All of the calculations used in this library can be found [here](https://www.mov
 From Coordinate ```csharp 
  Coordinate  _from = new Coordinate(52.205, 0.119); 
  ```
- <br />
+
 To Coordinate 
  ```csharp 
  Coordinate _to = new Coordinate(48.857, 2.351);
