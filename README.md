@@ -48,6 +48,7 @@ From Coordinate `Coordinate _from = new Coordinate(52.205, 0.119);` <br />
  
  </ul>
 </ul>
+
 # Courtesy
 
 Transcoded from `JavaScript originals` by *Chris Veness (C) 2005-2019*
