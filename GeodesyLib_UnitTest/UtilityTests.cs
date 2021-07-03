@@ -3,6 +3,10 @@ using NUnit.Framework;
 
 namespace GeodesyLib_UnitTest
 {
+    /// <summary>
+    /// Unit test class for `Utility` class.
+    /// Used NUnit.
+    /// </summary>
     public class UtilityTests
     {
         [Test]

@@ -4,6 +4,11 @@ using GeodesyLib.DataTypes;
 
 namespace GeodesyLib
 {
+    
+    /// <summary>
+    /// A ‘rhumb line’ (or loxodrome) is a path of constant bearing, which crosses all meridians at the same angle.
+    /// Rhumb lines are straight lines on a Mercator Projection map 
+    /// </summary>
     public static class RhumbCalculations
     {
         /// <summary>
@@ -13,7 +18,7 @@ namespace GeodesyLib
         /// </summary>
         /// <param name="from">starting coordinate, starting point of a destination</param>
         /// <param name="to">final coordinate, end point of a destination</param>
-        /// <returns>Returns the distance between two points along a rhumb line</returns>
+        /// <returns>Returns the rhumb distance between two points along a rhumb line</returns>
         public static double CalculateRhumbDistance(this Coordinate from, Coordinate to)
         {
             double lat1 = from.Latitude.ConvertDegreeToRadian();
@@ -46,6 +51,12 @@ namespace GeodesyLib
             return dist;
         }
 
+        /// <summary>
+        /// A rhumb line is a straight line on a Mercator projection, with an angle on the projec­tion equal to the compass bearing.
+        /// </summary>
+        /// <param name="from">Starting point</param>
+        /// <param name="to">End point</param>
+        /// <returns>Returns the rhumb bearing/direction from one coordinate to another.</returns>
         public static double CalculateRhumbBearing(this Coordinate from, Coordinate to)
         {
             double lat1 = from.Latitude.ConvertDegreeToRadian();
@@ -70,7 +81,14 @@ namespace GeodesyLib
             return bearing;
         }
 
-
+        /// <summary>
+        /// Given a start point and a distance d along constant bearing θ, this will calculate the destina­tion point.
+        /// If you maintain a constant bearing along a rhumb line, you will gradually spiral in towards one of the poles.
+        /// </summary>
+        /// <param name="from">Starting point</param>
+        /// <param name="distance">Final point</param>
+        /// <param name="bearing">Bearing/direction</param>
+        /// <returns>Returns the rhumb destination coordinate.</returns>
         public static Coordinate CalculateRhumbDestination(this Coordinate from,
             double distance,
             double bearing)
@@ -101,6 +119,14 @@ namespace GeodesyLib
         }
 
 
+        /// <summary>
+        /// This formula for calculating the ‘loxodromic midpoint’,
+        /// the point half-way along a rhumb line between two points,
+        /// is due to Robert Hill and Clive Tooth.
+        /// </summary>
+        /// <param name="from">Starting point</param>
+        /// <param name="to">Final point</param>
+        /// <returns>Returns the rhumb mid point between two coordinates.</returns>
         public static Coordinate CalculateRhumbMidPoint(this Coordinate from, Coordinate to)
         {
             double lat1 = from.Latitude.ConvertDegreeToRadian();

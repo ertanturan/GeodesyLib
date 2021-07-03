@@ -7,6 +7,11 @@ using NUnit.Framework;
 
 namespace GeodesyLib_UnitTest
 {
+    
+    /// <summary>
+    /// Unit test class for `SphericalCalculations` class.
+    /// Used NUnit.
+    /// </summary>
     public class SphericalCalculationsTests
     {
         private Coordinate _from;
@@ -48,7 +53,7 @@ namespace GeodesyLib_UnitTest
             double result = _from.CalculateBearing(_to
             );
             //assert
-            Assert.That(result, Is.EqualTo(156.16658258152279));
+            Assert.AreEqual(156.16658258152279, result, 0.0000000001d);
         }
 
         [Test]
@@ -63,7 +68,7 @@ namespace GeodesyLib_UnitTest
 
             //assert
 
-            Assert.AreEqual(expectedResult.Latitude, result.Latitude, 
+            Assert.AreEqual(expectedResult.Latitude, result.Latitude,
                 0.000000001d);
             Assert.AreEqual(expectedResult.Longitude, result.Longitude,
                 0.000000001d);
@@ -73,7 +78,7 @@ namespace GeodesyLib_UnitTest
         [Test]
         [TestCase(0, 52.205, 0.119)]
         [TestCase(1, 48.857, 2.351)]
-        [TestCase(0.5, 50.53632687827433d, 
+        [TestCase(0.5, 50.53632687827433d,
             1.2746141006782352d)]
         public void CalculateIntermediatePoint_WhenCalled_ReturnsIntermediateCoordinate(
             double fraction, double expectedLat, double expectedLon)
@@ -107,19 +112,19 @@ namespace GeodesyLib_UnitTest
 
 
         [Test]
-        public void GetNAmountOfCoordinatesBetween_WhenCalled_ReturnsNAmountOfCoordinates()
+        public void GetNCoordinatesBetweenTwoCoordinates_WhenCalled_ReturnsNAmountOfCoordinates()
         {
             //act
 
-            Coordinate[] result = _from.Get_N_AmountOfCoordinatesBetween(_to, 50);
+            Coordinate[] result = _from.GetNCoordinatesBetweenTwoCoordinates(_to, 50);
 
 
-            Assert.That(result,Is.Not.Null);
-            Assert.That(result,Is.Not.Empty);
+            Assert.That(result, Is.Not.Null);
+            Assert.That(result, Is.Not.Empty);
             Assert.That(result.Length, Is.EqualTo(50));
-            Assert.AreEqual(_from.Latitude, result[0].Latitude, 
+            Assert.AreEqual(_from.Latitude, result[0].Latitude,
                 0.0000001d);
-            Assert.AreEqual(_from.Longitude, result[0].Longitude, 
+            Assert.AreEqual(_from.Longitude, result[0].Longitude,
                 0.0000001d);
         }
 
@@ -127,12 +132,12 @@ namespace GeodesyLib_UnitTest
         public void CalculateEquirectangularApproximation_WhenCalled_ReturnsApproximateResult()
         {
             //arrange
-            
+
             //act
             double result = _from.CalculateEquirectangularApproximation(_to);
 
             //assert
-            Assert.AreEqual(result,404.3,0.1);
+            Assert.AreEqual(result, 404.3, 0.1);
         }
 
         [Test]
@@ -142,7 +147,7 @@ namespace GeodesyLib_UnitTest
 
             Coordinate firstCoordinate = new Coordinate(51.8853, 0.2545);
             double firstBearing = 108.55d;
-            
+
             Coordinate secondCoordinate = new Coordinate(49.0034, 2.5735);
             double secondBearing = 32.44d;
 
@@ -153,10 +158,9 @@ namespace GeodesyLib_UnitTest
                 secondCoordinate, secondBearing);
 
             //assert
-            
-            Assert.AreEqual(50.9076075004,result.Latitude,0.0000001d);
-            Assert.AreEqual(4.50857464576,result.Longitude,0.0000001d);
-            
+
+            Assert.AreEqual(50.9076075004, result.Latitude, 0.0000001d);
+            Assert.AreEqual(4.50857464576, result.Longitude, 0.0000001d);
         }
 
         [Test]
@@ -166,7 +170,7 @@ namespace GeodesyLib_UnitTest
 
             Coordinate firstCoordinate = new Coordinate(0, 0);
             double firstBearing = 0d;
-            
+
             Coordinate secondCoordinate = new Coordinate(49.0034, 2.5735);
             double secondBearing = 32.44d;
 
@@ -174,11 +178,9 @@ namespace GeodesyLib_UnitTest
 
             //assert
 
-            Assert.That(()=>SphericalCalculations.CalculateIntersectionPoint(
+            Assert.That(() => SphericalCalculations.CalculateIntersectionPoint(
                 firstCoordinate, firstBearing,
-                secondCoordinate, secondBearing) , Throws.Exception);
+                secondCoordinate, secondBearing), Throws.Exception);
         }
-        
-        
     }
 }
