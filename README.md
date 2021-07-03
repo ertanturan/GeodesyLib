@@ -19,6 +19,7 @@ So, head to the releases page and find the document in the downloads section of 
 From Coordinate `Coordinate _from = new Coordinate(52.205, 0.119);` <br />
  To Coordinate `Coordinate _to = new Coordinate(48.857, 2.351);`
 
+<ul>
 ### Haversine Distance
 
 `double result = _from.HaversineDistance(_to);`
@@ -41,6 +42,8 @@ From Coordinate `Coordinate _from = new Coordinate(52.205, 0.119);` <br />
 
 ` Coordinate result = _from.CalculateIntermediatePointByFraction(_to,fraction);`
 
+ 
+ </ul>
 
 # Courtesy
 
