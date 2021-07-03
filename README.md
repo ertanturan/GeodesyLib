@@ -16,7 +16,7 @@ So, head to the releases page and find the document in the downloads section of 
 
 ## Examples
 
-From Coordinate `Coordinate _from = new Coordinate(52.205, 0.119);` (<-- two spaces)
+From Coordinate `Coordinate _from = new Coordinate(52.205, 0.119);` <br />
  To Coordinate `Coordinate _to = new Coordinate(48.857, 2.351);`
 
 ### Haversine Distance
