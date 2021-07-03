@@ -1,5 +1,6 @@
 # GeodesyLib
 
+This library contains the most used geodetic calculations both in spherical and rhumb way.
 
 # Usage
 
