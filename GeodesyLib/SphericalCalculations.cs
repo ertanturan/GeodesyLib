@@ -16,11 +16,16 @@ namespace GeodesyLib
     /// </summary>
     public static class SphericalCalculations
     {
-        // This uses the ‘haversine’ formula to calculate the great-circle distance between
-        // two points – that is,
-        // the shortest distance over the earth’s surface – giving an ‘as-the-crow-flies’
-        // distance between the points
-        // (ignoring any hills they fly over, of course!).
+        /// <summary>
+        ///   This uses the ‘haversine’ formula to calculate the great-circle distance between
+        ///   two points – that is,
+        ///   the shortest distance over the earth’s surface – giving an ‘as-the-crow-flies’
+        ///   distance between the points
+        /// (ignoring any hills they fly over, of course!).
+        /// </summary>
+        /// <param name="from">starting coordinate, starting point of a destination </param>
+        /// <param name="to">final coordinate, end point of a destination</param>
+        /// <returns>Returns ellipsodial distance between two coordinates with %0.3 error .</returns>
         public static double HaversineDistance([NotNull] this Coordinate from,
             [NotNull] Coordinate to)
         {
@@ -256,7 +261,7 @@ namespace GeodesyLib
         /// <param name="to">Final point</param>
         /// <returns>The approximate distance between two coordinates.</returns>
         public static double CalculateEquirectangularApproximation(
-            [NotNull] this  Coordinate from, [NotNull]Coordinate to)
+            [NotNull] this Coordinate from, [NotNull] Coordinate to)
         {
             double lat1 = from.Latitude.ConvertDegreeToRadian();
             double lat2 = to.Latitude.ConvertDegreeToRadian();
@@ -270,7 +275,7 @@ namespace GeodesyLib
             double d = Math.Sqrt(x * x + y * y) * Constants.RADIUS;
             return d;
         }
-        
+
         /// <summary>
         /// This function finds the intersection of two paths with two coordinates and bearings given.
         /// </summary>
@@ -282,8 +287,8 @@ namespace GeodesyLib
         /// <exception cref="InfiniteIntersectionException">An error thrown only when there's infinite amount of intersection found.</exception>
         /// <exception cref="IntersectionAmbiguousException">An error thrown only when intersection can not be calculated for sure.</exception>
         public static Coordinate CalculateIntersectionPoint(
-           [NotNull] Coordinate point1, double bearing1,
-           [NotNull] Coordinate point2, double bearing2)
+            [NotNull] Coordinate point1, double bearing1,
+            [NotNull] Coordinate point2, double bearing2)
         {
             double lat1 = point1.Latitude.ConvertDegreeToRadian(),
                 lon1 = point1.Longitude.ConvertDegreeToRadian();
@@ -349,6 +354,5 @@ namespace GeodesyLib
 
             return new Coordinate(newLat, newLon);
         }
-        
     }
 }

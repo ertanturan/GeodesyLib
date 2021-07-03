@@ -11,10 +11,7 @@ namespace GeodesyLib.Exceptions
         {
         }
 
-        public InfiniteIntersectionException(string message, Exception innerException)
-            : base(message, innerException)
-        {
-        }
+     
         
     }
 }

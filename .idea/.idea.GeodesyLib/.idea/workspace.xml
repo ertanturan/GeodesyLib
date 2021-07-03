@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e64d0abb-d638-48da-84bc-7243b52058ac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeodesyLib/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib/AdditionalCalculations.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/GeodesyLib/Exceptions/InfiniteIntersectionException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/Exceptions/InfiniteIntersectionException.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib/RhumbCalculations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/RhumbCalculations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib/Utility/Constants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/Utility/Constants.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib/Utility/Utility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib/Utility/Utility.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeodesyLib_UnitTest/RhumbCalculationTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeodesyLib_UnitTest/RhumbCalculationTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +87,7 @@
       <workItem from="1623095361311" duration="1167000" />
       <workItem from="1623592856819" duration="16681000" />
       <workItem from="1623690540458" duration="4322000" />
+      <workItem from="1625329905740" duration="521000" />
     </task>
     <servers />
   </component>
