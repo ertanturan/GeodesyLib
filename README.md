@@ -32,11 +32,15 @@ To Coordinate `Coordinate _to = new Coordinate(48.857, 2.351);`
 
 ### Bearing
 
- ```csharp double result = _from.CalculateBearing(_to);```
+ ```csharp 
+ double result = _from.CalculateBearing(_to);
+ ```
 
 ### Spherical Law Of Cosines
 
- ```csharp double result = _from.CalculateSphericalLawOfCosines(_to);```
+ ```csharp 
+ double result = _from.CalculateSphericalLawOfCosines(_to);
+ ```
 
 ### Calculate Mid Point
 
