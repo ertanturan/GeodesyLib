@@ -1,5 +1,13 @@
 ﻿namespace GeodesyLib.DataTypes
 {
+    
+    /// <summary>
+    /// A geodetic datum or geodetic system
+    /// (also: geodetic reference datum, geodetic reference system,
+    /// or geodetic reference frame) is a global datum reference or
+    /// reference frame for precisely measuring locations
+    /// on Earth or other planetary body.
+    /// </summary>
     public class Coordinate
     {
         /// <summary>

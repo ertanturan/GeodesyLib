@@ -160,7 +160,7 @@ namespace GeodesyLib
         /// <param name="distance">arc distance between starting and final points</param>
         /// <param name="fraction">f=0 is the starting point , f=1 is the end point ,
         /// 0.xxx is the between points</param>
-        /// <returns></returns>
+        /// <returns>Returns coordinate between two coordinates by user-given fraction </returns>
         public static Coordinate CalculateIntermediatePointByFraction([NotNull] this Coordinate from,
             [NotNull] Coordinate to, double fraction)
         {
@@ -220,12 +220,14 @@ namespace GeodesyLib
         }
 
         /// <summary>
-        /// Calculates and returns destination coordinate given starting coordinate,bearing and distance.
+        /// Calculates and returns destination coordinate given starting coordinate,
+        /// bearing and distance.
         /// </summary>
-        /// <param name="from"></param>
-        /// <param name="distance"></param>
-        /// <param name="bearing"></param>
-        /// <returns></returns>
+        /// <param name="from">Starting point</param>
+        /// <param name="distance">End point</param>
+        /// <param name="bearing">Direction</param>
+        /// <returns>Returns the destination coordinate given starting coordinate,
+        /// distance(meters) and bearing</returns>
         public static Coordinate CalculateDestinationPoint([NotNull] this Coordinate from,
             double distance
             , double bearing)
@@ -283,7 +285,7 @@ namespace GeodesyLib
         /// <param name="bearing1">The bearing/direction of the first starting point</param>
         /// <param name="point2">The second coordinate of the second starting point</param>
         /// <param name="bearing2">The bearing/direction of the second starting point</param>
-        /// <returns>Returns Coordinate</returns>
+        /// <returns>Returns Intersection coordinate between two coordinates given bearings</returns>
         /// <exception cref="InfiniteIntersectionException">An error thrown only when there's infinite amount of intersection found.</exception>
         /// <exception cref="IntersectionAmbiguousException">An error thrown only when intersection can not be calculated for sure.</exception>
         public static Coordinate CalculateIntersectionPoint(
@@ -354,5 +356,6 @@ namespace GeodesyLib
 
             return new Coordinate(newLat, newLon);
         }
+        
     }
 }

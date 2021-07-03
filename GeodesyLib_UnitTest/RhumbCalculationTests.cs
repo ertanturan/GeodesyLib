@@ -5,7 +5,10 @@ using NUnit.Framework;
 namespace GeodesyLib_UnitTest
 {
     
-    
+    /// <summary>
+    /// Unit test class for `RhumbCalculations` class.
+    /// Used NUnit.
+    /// </summary>
     public class RhumbCalculationTests
     {
         private Coordinate _from;

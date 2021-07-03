@@ -7,6 +7,11 @@ using NUnit.Framework;
 
 namespace GeodesyLib_UnitTest
 {
+    
+    /// <summary>
+    /// Unit test class for `SphericalCalculations` class.
+    /// Used NUnit.
+    /// </summary>
     public class SphericalCalculationsTests
     {
         private Coordinate _from;
