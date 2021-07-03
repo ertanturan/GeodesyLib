@@ -17,13 +17,12 @@ A doxygen output for the documentation of the code is included and will be inclu
 So, head to the releases page and find the document in the downloads section of the related version.
  
 ## Calculations
-All of the calculations used in this library can be found [here](https://www.movable-type.co.uk/scripts/latlong.html) 
+All of the calculations used in this library can be found [here](https://www.movable-type.co.uk/scripts/latlong.html).
  
-
 ## Examples
 
 From Coordinate `Coordinate _from = new Coordinate(52.205, 0.119);` <br />
- To Coordinate `Coordinate _to = new Coordinate(48.857, 2.351);`
+To Coordinate `Coordinate _to = new Coordinate(48.857, 2.351);`
 
 <ul>
  
@@ -48,6 +47,14 @@ From Coordinate `Coordinate _from = new Coordinate(52.205, 0.119);` <br />
 ` double distance = _from.HaversineDistance(_to);`
 
 ` Coordinate result = _from.CalculateIntermediatePointByFraction(_to,fraction);`
+ 
+### Calculate Destination Point
+ 
+`Coordinate result = _from.CalculateDestinationPoint(_from, _to);`
+ 
+### Get N Coordinated Between Two Coordinates
+ 
+`Coordinate[] result = _from.GetNCoordinatesBetweenTwoCoordinates(_to, 50);`
 
  
  </ul>
