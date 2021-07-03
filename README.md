@@ -56,6 +56,26 @@ To Coordinate `Coordinate _to = new Coordinate(48.857, 2.351);`
  
 `Coordinate[] result = _from.GetNCoordinatesBetweenTwoCoordinates(_to, 50);`
 
+### Calculate Equirectangular Approximation
+ 
+`double result = _from.CalculateEquirectangularApproximation(_to);`
+ 
+
+ ### Calculate Intersection Point
+ 
+ ```csharp Coordinate firstCoordinate = new Coordinate(51.8853, 0.2545);
+            double firstBearing = 108.55d;
+
+            Coordinate secondCoordinate = new Coordinate(49.0034, 2.5735);
+            double secondBearing = 32.44d;
+
+            //act
+
+            Coordinate result = SphericalCalculations.CalculateIntersectionPoint(
+                firstCoordinate, firstBearing,
+                secondCoordinate, secondBearing);
+ 
+ ```
  
  </ul>
 </ul>
