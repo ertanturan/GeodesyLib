@@ -19,7 +19,7 @@ So, head to the releases page and find the document in the downloads section of 
 From Coordinate `Coordinate _from = new Coordinate(52.205, 0.119);` <br />
  To Coordinate `Coordinate _to = new Coordinate(48.857, 2.351);`
 
-###  > Haversine Distance
+>###  Haversine Distance
 
 `double result = _from.HaversineDistance(_to);`
 
