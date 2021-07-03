@@ -73,7 +73,7 @@ To Coordinate
  Coordinate result = _from.CalculateDestinationPoint(_from, _to);
  ```
  
-### Get N Coordinated Between Two Coordinates
+### Get N Coordinates Between Two Coordinates
  
  ```csharp 
  Coordinate[] result = _from.GetNCoordinatesBetweenTwoCoordinates(_to, 50);
@@ -111,3 +111,11 @@ To Coordinate
 Transcoded from `JavaScript originals` by *Chris Veness (C) 2005-2019*
 and several `C++ classes` by *Charles F.F. Karney (C) 2008-2021 and
 published under the same `MIT License`.
+
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+
