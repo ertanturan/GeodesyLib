@@ -106,7 +106,7 @@ To Coordinate
 
 # Courtesy
 
-Transcoded from `JavaScript originals` by *Chris Veness (C) 2005-2019* under the `MIT License`.
+Transcoded from (JavaScript originals)[https://github.com/chrisveness/geodesy] by *Chris Veness (C) 2005-2019* under the `MIT License`.
 
 All of the calculations used in this library can be found [here](https://www.movable-type.co.uk/scripts/latlong.html).
 
