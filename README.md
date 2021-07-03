@@ -89,10 +89,10 @@ To Coordinate
  ### Calculate Intersection Point
  
  ```csharp 
- Coordinate firstCoordinate = new Coordinate(51.8853, 0.2545);
+ Coordinate firstCoordinate = new Coordinate(51.8853, 0.2545); // somewhere in UK
             double firstBearing = 108.55d;
 
-            Coordinate secondCoordinate = new Coordinate(49.0034, 2.5735);
+            Coordinate secondCoordinate = new Coordinate(49.0034, 2.5735); // somewhere in France
             double secondBearing = 32.44d;
 
             //act
