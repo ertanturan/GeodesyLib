@@ -15,6 +15,6 @@ So, head to the releases page and find the document in the downloads section of 
 
 # Courtesy
 
-Transcoded from `JavaScript originals`_ by *Chris Veness (C) 2005-2019*
-and several `C++ classes`_ by *Charles F.F. Karney (C) 2008-2021* and
-published under the same `MIT License`_.
+Transcoded from `JavaScript originals` by *Chris Veness (C) 2005-2019*
+and several `C++ classes` by *Charles F.F. Karney (C) 2008-2021 and
+published under the same `MIT License`.
