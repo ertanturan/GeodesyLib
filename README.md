@@ -58,7 +58,7 @@ To Coordinate
 ### Calculate Intermediate Point
 
  ```csharp 
- double distance = _from.HaversineDistance(_to);
+ double fraction = 0.88; // Fraction should be between zero and 1 (0-1)
  ```
 
  ```csharp 
