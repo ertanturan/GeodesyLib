@@ -104,6 +104,10 @@ To Coordinate
  </ul>
 </ul>
 
+# Unit Tests
+
+All the unit tests coded using NUnit framework. Unit test coverage is %100 .
+
 # Courtesy
 
 Transcoded from [JavaScript originals](https://github.com/chrisveness/geodesy) by *Chris Veness (C) 2005-2019* under the `MIT License`.
