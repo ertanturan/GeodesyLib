@@ -68,7 +68,7 @@ To Coordinate
 ### Calculate Destination Point
  
  ```csharp 
- Coordinate result = _from.CalculateDestinationPoint(_from, _to);
+Coordinate result = _from.CalculateDestinationPoint(distance, bearing);
  ```
  
 ### Get N Coordinates Between Two Coordinates
